@@ -1,7 +1,7 @@
 <div class="cms-menu cms-panel cms-panel-layout west" id="cms-menu" data-layout-type="border">
 	<div class="cms-logo-header north">
 		<div class="cms-logo">
-			<a href="http://briant.me/" target="_blank" title="Contact Brian Teachman about this SilverStripe build.">
+			<a href="{$ApplicationUrl}" target="_blank" title="Contact Brian Teachman about this SilverStripe build for {$ApplicationName}.">
 				<!-- Built on SilverStripe (Version - $CMSVersion) -->
 				Contact Brian Teachman about this SilverStripe build.
 			</a>
@@ -32,12 +32,6 @@
 				</a>			
 			</li>
 		<% end_loop %>
-			<li class="bookmarked-link first">
-		        <a href="admin/pages/edit/show/1">Edit "My popular page"</a>
-		    </li>
-		    <li class="bookmarked-link last">
-		        <a href="admin/pages/edit/show/99">Edit "My other page"</a>
-		    </li>
 		</ul>
 	</div>
 		

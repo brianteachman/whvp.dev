@@ -14,14 +14,13 @@ $databaseConfig = array(
 	"path" => '',
 );
 
-// Set the site locale
 i18n::set_locale('en_US');
 
 MySQLDatabase::set_connection_charset('utf8');
 
-SSViewer::set_theme('whvp');
-
 FulltextSearchable::enable();
+
+SSViewer::set_theme('whvp');
 
 
 // Enable nested URLs for this site (e.g. page/sub-page/)
@@ -48,13 +47,15 @@ if (Director::isLive()) {
 Email::setAdminEmail(EMAIL);
 
 
-/**
- * Removing unused options in the CMS editor.
- */
+// Removing unused options in the CMS editor.
 // HtmlEditorConfig::get('cms')->removeButtons('tablecontrols');
 // HtmlEditorConfig::get('cms')->removeButtons('ssflash');
 
-/**
- * Set the image quality higher than the default.
- */
+// Higher image quality than default.
 GD::set_default_quality(85);
+
+// CMS Theme overrides
+LeftAndMain::setApplicationName('Admin Console: Whatcom Historic Views and Places');
+LeftAndMain::set_application_link('http://whvp.briant.me/');
+LeftAndMain::require_css(PROJECT_DIR.'/css/bt_cms_overrides.css');
+// LeftAndMain::require_javascript(PROJECT_DIR.'/js/bt_cms_overrides.js');

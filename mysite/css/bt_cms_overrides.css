@@ -1,0 +1,12 @@
+.cms-logo a { 
+	position: absolute; 
+	top: 8px; 
+	bottom: 8px; 
+	left: 4px; 
+	display: block; 
+	width: 24px; 
+	background: url("../images/logo_small.png") no-repeat left center; 
+	text-indent: -9999em; 
+	padding-right: 7px; 
+	border-right: 1px solid #19435c; 
+}
