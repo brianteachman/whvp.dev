@@ -1,0 +1,251 @@
+/*
+
+main        background-color: #f1dca5;  BEIGE-ISH
+p-text      font-color:       #5f757a;  BLUE
+h1-h4       font-color:       #325771;  DARK BLUE
+
+box         background-color: #805c38;  BROWN
+nav, search background-color: #d3d0c7;  GREY
+nav, search font-color:       #131313;  DARK GREY
+
+*/
+
+/* Typography */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4 { text-shadow: 4px 4px 4px #aaa; }
+
+
+/* 
+  Layout ------------------- */
+header {
+    margin-bottom: 1.5em;
+}
+
+
+
+/* 
+  HomePage ----------------- */
+.header-banner {
+    position: relative;
+    width: 100%; /* for IE 6 */
+}
+.header-text {
+    position: absolute; 
+    top: 15px;
+    right: 80px;
+    width: 100%;
+}
+.header-banner > img {
+    width: 100%;
+    z-index: -1;
+}
+.homepage-article > .content {
+    padding: 0 2em;
+    position: relative;
+    top: -20px;
+}
+.homepage-footer {
+	background-color: #8B4513;
+    padding: 0.75em;
+}
+.homepage-footer > span {
+    margin-left: 0.75em;
+}
+.homepage-footer:first-child {
+    margin-left: 0;
+}
+@media (max-width: 920px) {
+    .homepage-article > .content {
+        padding: 0.5em;
+        position: relative;
+        top: 0;
+    }
+    .header-text {
+        right: 60px;
+    }
+    .header-text h1,
+    .header-text h2 {
+        font-size: 110%;
+        line-height: 99%;
+    }
+}
+@media (max-width: 600px) {
+    .header-text {
+        top: 0px;
+        right: 5px;
+        font-size: 100%;
+    }
+}
+
+
+/* 
+  SearchForm ----------------- */
+.search-box {
+    margin: 1em 0;
+}
+.search-input-box {
+    background-color: #d3d0c7;
+    color: #131313;
+}
+
+
+/* 
+  Footer Navigation ----------------- */
+
+/* COLORS */
+.light-blue-bg {
+    background-color: #d3d0c7;
+}
+
+.nav {
+    padding: 0.5em 1em;
+    text-align: center;
+}
+.subtle-title {
+    font-family: 'Open Sans Extrabold', sans-serif;
+    text-shadow: 4px 4px 4px #aaa;
+    letter-spacing: 1px;
+}
+.footer-nav {
+    display: inline;
+    list-style:none;
+    margin-left: 0;
+    padding-bottom: 1em;
+}
+.footer-nav > li,
+.footer-nav > li > a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    text-decoration: none;
+    text-align: center;
+}
+.footer-nav > li {
+    /*padding-right: 0.6em;*/
+    /*border-right: 2px solid #325771;*/
+}
+.footer-nav > li:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+
+/* 
+  ProjectPage --------------------- */
+
+/* COLORS */
+.dark-grey-bg {
+    background-color: #484848;
+    color: #f7d87f;
+}
+.beige-bg {
+    background-color: #f7d87f;
+    color: #7f9ef7;
+}
+
+.btn-back {
+    display: inline-block;
+}
+.btn-back > i {
+    margin: 15px 8px 15px 15px;
+}
+
+/* 
+  GeographicScopePage ---------- */
+
+/* COLORS */
+.faded-beige-bg {
+    background-color: rgb(241, 220, 165);
+    background-color: rgba(241, 220, 165, 0.8);
+    color: #131313;
+}
+
+.geographic-focus {
+    margin-top: 700px;
+}
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1170px;
+    
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: 140%;
+    
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:-1;
+}
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -585px;   /* 50% */
+  }
+}
+
+.message-pointer {
+    padding-bottom: 1em;
+}
+.geo-header > h1 {
+    margin-left: 1em;
+}
+.geo-content {
+    padding: 0.5em;
+}
+
+
+/* 
+  Site Images & Labels ---------- */
+.image-info-header {
+    margin-bottom: 1em;
+}
+.site-img {
+    position: relative;
+}
+.info-btn {
+    background-color: #f1dca5;
+    color: #131313;
+    padding: 0.5em 1em;
+    -webkit-box-shadow: 2px 2px 6px #aaa;
+       -moz-box-shadow: 2px 2px 6px #aaa;
+            box-shadow: 2px 2px 6px #aaa;
+    z-index: 10;
+}
+.pos-top-left {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+.pos-top-right {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.pos-bottom-right {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+.site-img > img {
+    z-index: -1;
+}
+
+
+/* 
+  UTILITIES --------------- */
+.pad-1 {
+    padding: 1em;
+}
+.padd {
+    margin: 0 0.5em;
+}
+
+.qr { display: none; }
+@media print {
+    .qr { display: block; }
+}

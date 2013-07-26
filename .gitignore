@@ -1,0 +1,11 @@
+# Ignore all
+/*
+
+!.gitignore
+
+!/whvp
+!/themes
+/themes/*
+!/themes/whvp
+
+!/mysite
