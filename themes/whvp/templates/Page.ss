@@ -9,7 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Brian Teachman">
-	$MetaTags(false)
+	<%-- $MetaTags(false) --%>
+
+    <!-- start: Facebook Open Graph -->
+    <meta property="og:title" content="<% if $MetaTitle %>$MetaTitle:<% else %>$Title:<% end_if %> $SiteConfig.Title">
+    <meta property="og:description" content="{$MetaDescription}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{$AbsoluteLink}">
+    <meta property="og:image" content="{$ThemeDir}/img/site/image-m.jpg">
+    <!-- end: Facebook Open Graph -->
     
 	<link href="/{$ThemeDir}/img/favicon.ico" rel="icon" type="image/x-icon" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,800' rel='stylesheet' type='text/css'>

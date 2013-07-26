@@ -18,6 +18,7 @@ i18n::set_locale('en_US');
 
 MySQLDatabase::set_connection_charset('utf8');
 
+// This means MySQL tables are MyISAM
 FulltextSearchable::enable();
 
 SSViewer::set_theme('whvp');

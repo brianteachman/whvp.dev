@@ -95,7 +95,8 @@ abstract class Emailer_Controller extends Page_Controller {
      * @return boolean Tell the template if this URL parameter is set or not.
      */
     protected function IsSuccess() {
-        $url = Director::URLParams();
+        // $url = Director::URLParams();
+        $url = $this->request->params();
         return (isset($url['Action']) && ($url['Action'] == 'sent'));
     }
 }

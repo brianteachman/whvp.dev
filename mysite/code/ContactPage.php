@@ -46,10 +46,10 @@ class ContactPage_Controller extends Emailer_Controller {
         
         $comment = new TextareaField('Comment', 'Message' . SPAN);
         // $comment->addExtraClass('rounded');
-        $comment->setRows(20);
-        $comment->setColumns(10);
+        $comment->setRows(10);
+        $comment->setColumns(8);
         
-        $fields = new FieldSet(
+        $fields = new FieldList(
             $firstName,
             $surname,
             $email,
@@ -60,7 +60,7 @@ class ContactPage_Controller extends Emailer_Controller {
         $send = new FormAction('sendemail', 'Send');
         $send->addExtraClass('btn');
         
-        $actions = new FieldSet(
+        $actions = new FieldList(
             $send
         );
         

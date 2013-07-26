@@ -201,6 +201,14 @@ img.bg {
 
 /* 
   Site Images & Labels ---------- */
+.site-images-info {} /* pages body class */
+header.site-images-info {
+    padding: 0 0.5em;
+    width: 240px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 .image-info-header {
     margin-bottom: 1em;
 }
@@ -233,6 +241,13 @@ img.bg {
 }
 .site-img > img {
     z-index: -1;
+}
+@media (max-width: 600px) {
+    header.site-images-info {
+        padding: 0 0.5em;
+        min-width: 240px;
+        position: static;
+    }
 }
 
 

@@ -7,7 +7,7 @@
 						 height="241"
 						 alt="">
 					<a href="http://whvp.dev/site-images-info/image-l"  
-					   class="badge pos-top-left" 
+					   class="badge info-btn pos-top-left" 
 					   title="See Image L on the Site Image Info page">L</a>
 				</div>
 			</div>
@@ -19,8 +19,15 @@
 						 height="241"
 						 alt="">
 					<a href="http://whvp.dev/site-images-info/image-m" 
-					   class="badge pos-top-left" 
+					   class="badge info-btn pos-top-left" 
 					   title="See Image M on the Site Image Info page">M</a>
+
+				    <header role="banner" class="$URLSegment dark-grey-bg">
+						<h1 class="text-right">
+							<a href="/" class="btn-back light-blue-bg brand" title="Return to Home page."><i class="icon-arrow-left icon-white"></i> whvp </a>
+							<span>$Title</span>
+						</h1>
+					</header>
 				</div>
 			</div>
 
@@ -39,7 +46,7 @@
 					<% loop $Children %>
 					<tr>
 						<td>
-							<b>Image $ImageLabel</b>
+							<b><a href="{$AbsoluteLink}">Image $SiteLabel</a></b>
 						</td>
 						<td>$Content</td>
 					</tr>
