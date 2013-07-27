@@ -72,7 +72,14 @@ class ContactPage_Controller extends Emailer_Controller {
         );
         
         // Return configured Sapphire Form instance
-        return new Form($this, 'Form', $fields, $actions, $validator);
+        $form = new Form($this, 'Form', $fields, $actions, $validator);
+
+        // enable MathSpamProtection
+        if(class_exists('SpamProtectorManager')) {
+            SpamProtectorManager::update_form($form);
+        }
+
+        return $form;
     }
 }
 

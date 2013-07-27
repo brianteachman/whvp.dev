@@ -5,14 +5,13 @@
 			<div class="span8">
 
 				<div class="content">
-					$Content
+					<% if IsSuccess && SubmitText %>
+			            $SubmitText
+			        <% else %>
+			        	$Content
+			            $Form
+			        <% end_if %>
 				</div>
-				
-				<% if IsSuccess && SubmitText %>
-		            $SubmitText
-		        <% else %>
-		            $Form
-		        <% end_if %>
 
 			</div>
 

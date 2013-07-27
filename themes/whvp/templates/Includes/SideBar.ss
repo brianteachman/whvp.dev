@@ -1,5 +1,5 @@
 <aside class="">
-	<% if $Menu(2) %>
+	<% if $Menu(1) %>
 		<nav class="secondary">
 			<% with $Level(1) %>
 				<h3>

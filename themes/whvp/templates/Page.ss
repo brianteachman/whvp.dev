@@ -31,7 +31,7 @@
 </head>
 <body class="$URLSegment<% if not $Menu(2) %> no-sidebar<% end_if %>" id="$ClassName">
 
-	<div class="container-fluid" role="main">
+	<div class="container-fluid typography" role="main">
 
 		$Layout
 		
