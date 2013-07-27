@@ -25,12 +25,12 @@ class Emailer extends Page {
     public function getCMSFields() {
         $fields = parent::getCMSFields();
         $fields->addFieldToTab(
-            "Root.Content.Email",
+            "Root.Email",
             new EmailField('Mailto', 'Recipient')
         );
         $fields->addFieldToTab(
-            "Root.Content.Email",
-            new HTMLEditorField('SubmitText', 'Confirmation text, after sending the email')
+            "Root.Email",
+            new HTMLEditorField('SubmitText', 'Email sent confirmation text')
         );
         return $fields;
     }
@@ -68,17 +68,18 @@ abstract class Emailer_Controller extends Page_Controller {
      */
     public function sendemail($data, $form) {
         if (!empty($this->Mailto)) {
-            $email = $this->Mailto;
+            $to = $this->Mailto;
         } else {
-            $email = EMAIL;
+            $to = EMAIL;
         }
         $from = $data['Email'];
-        $to = $email;
         $subject = $this->subject;
+
         $email = new Email($from, $to, $subject);
         $email->setTemplate('ContactEmail');
         $email->populateTemplate($data);
         $email->send();
+        
         Director::redirect($this->Link('sent'));
     }
     
