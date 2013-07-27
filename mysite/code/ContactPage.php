@@ -74,7 +74,7 @@ class ContactPage_Controller extends Emailer_Controller {
         // Return configured Sapphire Form instance
         $form = new Form($this, 'Form', $fields, $actions, $validator);
 
-        // enable MathSpamProtection
+        // enable RecaptchaProtection
         if(class_exists('SpamProtectorManager')) {
             SpamProtectorManager::update_form($form);
         }
