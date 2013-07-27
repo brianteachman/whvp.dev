@@ -8,7 +8,7 @@
 					<% if IsSuccess && SubmitText %>
 			            $SubmitText
 			        <% else %>
-			        	$Content
+			        	<span class="lead">$Content</span>
 			            $Form
 			        <% end_if %>
 				</div>
