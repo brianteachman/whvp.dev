@@ -4,15 +4,9 @@ global $project;
 $project = 'mysite';
 define('PROJECT_DIR', $project);
 
-global $databaseConfig;
-$databaseConfig = array(
-	"type" => 'MySQLDatabase',
-	"server" => 'localhost',
-	"username" => '',
-	"password" => '',
-	"database" => '',
-	"path" => '',
-);
+global $database;
+$database = 'briantme_whvp';
+require_once('conf/ConfigureFromEnv.php');
 
 i18n::set_locale('en_US');
 
