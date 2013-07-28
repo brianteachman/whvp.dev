@@ -61,7 +61,7 @@ abstract class Emailer_Controller extends Page_Controller {
     /**
      * The form itself, to be implemented by the child classes.
      */
-    abstract protected function Form();
+    abstract protected function ContactForm();
     
     /**
      * The form handler.

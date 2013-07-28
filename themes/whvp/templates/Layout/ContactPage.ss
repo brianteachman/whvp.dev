@@ -9,7 +9,7 @@
 			            $SubmitText
 			        <% else %>
 			        	<span class="lead">$Content</span>
-			            $Form
+			            $ContactForm
 			        <% end_if %>
 				</div>
 

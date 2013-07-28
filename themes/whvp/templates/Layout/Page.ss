@@ -6,15 +6,14 @@
 				<div class="content">
 					$Content
 				</div>
+				$Form
+				$PageComments
 			</div>
 
 			<div class="span3">
 				<% include PageSideBar %>
 			</div>
-
-
-			$Form
-			$PageComments
+			
 		</div>
 
 		<% include Footer %>

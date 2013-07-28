@@ -24,11 +24,11 @@ class ContactPage_Controller extends Emailer_Controller {
 	protected $subject = 'Correspondence from whvp.org Contact form';
     
     /**
-     * Implement subclass Emailer::Form()
+     * Implement abstract Emailer->ContactForm()
      * 
      * @return Form instance
      */
-    protected function Form() {
+    protected function ContactForm() {
         // include specific js file
         // Requirements::javascript(PROJECT_DIR . '/javascript/ContactPage.js');
         
@@ -72,11 +72,11 @@ class ContactPage_Controller extends Emailer_Controller {
         );
         
         // Return configured Sapphire Form instance
-        $form = new Form($this, 'Form', $fields, $actions, $validator);
+        $form = new Form($this, 'ContactForm', $fields, $actions, $validator);
 
         // enable RecaptchaProtection
         if(class_exists('SpamProtectorManager')) {
-            SpamProtectorManager::update_form($form);
+            // SpamProtectorManager::update_form($form);
         }
 
         return $form;
