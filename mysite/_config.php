@@ -31,18 +31,11 @@ Object::add_extension('SiteConfig', 'CustomSiteConfig');
 Object::add_extension('Image', 'SiteImage');
 
 
-<<<<<<< HEAD
 /**
  * Environment Configuration ------------------------------------ */
 
 // Site administrator contact
 define('ADMIN_EMAIL', 'me@briant.me');
-=======
-if (Director::isLive()) {
-
-	// Configure Admin email
-    define('EMAIL', 'tim@whvp.org');
->>>>>>> f61b2bbceacf0de57d967d15656e4efbbe42c20b
 
 if (Director::isLive()) {
 	// 
@@ -87,9 +80,6 @@ GD::set_default_quality(85);
 
 // Dev server credentials, update to clients server for Live server
 RecaptchaField::$public_api_key = '6LfJVeUSAAAAAHpUka_PlERGrfwWYehZzj71Z9pR';
-<<<<<<< HEAD
 RecaptchaField::$private_api_key = '6LfJVeUSAAAAADmR0c6w5A7qO2FvpTLNH5gEA3Qv';
 SpamProtectorManager::set_spam_protector('RecaptchaProtector');
-=======
 RecaptchaField::$private_api_key = '6LfJVeUSAAAAADmR0c6w5A7qO2FvpTLNH5gEA3Qv';
->>>>>>> f61b2bbceacf0de57d967d15656e4efbbe42c20b
