@@ -5,7 +5,7 @@ $project = 'mysite';
 define('PROJECT_DIR', $project);
 
 global $database;
-$database = 'whvp';
+$database = 'briantme_whvp';
 require_once('conf/ConfigureFromEnv.php');
 
 i18n::set_locale('en_US');
@@ -29,10 +29,10 @@ Object::add_extension('SiteConfig', 'CustomSiteConfig');
 if (Director::isLive()) {
 	
 	// Configure Admin email
-    define('EMAIL', 'tim@whvp.org');
+    define('EMAIL', 'me@briant.me');
 
     // force www.whvp.org (as opposed to http://whvp.org)
-	Director::forceWWW();
+    //Director::forceWWW();
 } else {
     define('EMAIL', 'me@briant.me');
     Email::send_all_emails_to(EMAIL);
