@@ -23,6 +23,13 @@ header {
     margin-bottom: 1.5em;
 }
 
+.content {
+    padding: 1em 1em 0;
+}
+
+.side-bar {
+    padding: 1em;
+}
 
 
 /* 

@@ -1,17 +1,17 @@
 		<% include Header %>
 
 		<div class="row-fluid">
+			<div class="content">
+				<div class="span9">
+					<h2>Image Number: {$ImageID}-{$ImageGrpID}</h2>
+					<img src="{$ThemeDir}/img/site/{$URLSegment}.jpg" alt="{$Title}, " class="img-rounded">
+					$Content
+				</div>
 
-			<div class="span8">
-				<h2>Image Number: {$ImageID}-{$ImageGrpID}</h2>
-				<img src="{$ThemeDir}/img/site/{$URLSegment}.jpg" alt="{$Title}, ">
-				<div class="content">$Content</div>
+				<div class="span3">
+					<% include SideBar %>
+				</div>
 			</div>
-
-			<div class="span4">
-				<% include SideBar %>
-			</div>
-
 
 			$Form
 			$PageComments

@@ -17,35 +17,39 @@ FulltextSearchable::enable();
 
 SSViewer::set_theme('whvp');
 
-
 // Enable nested URLs for this site (e.g. page/sub-page/)
 if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
 
 
+/**
+ * CMS Class overrides ------------------------------------------ */
+
 // See: mysite/code/CustomSiteConfig.php
 Object::add_extension('SiteConfig', 'CustomSiteConfig');
 
+// See: mysite/code/SiteImage.php
+Object::add_extension('Image', 'SiteImage');
+
+
+/**
+ * Environment Configuration ------------------------------------ */
+
+// Site administrator contact
+define('ADMIN_EMAIL', 'me@briant.me');
 
 if (Director::isLive()) {
-	
-	// Configure Admin email
-    define('EMAIL', 'tim@whvp.org');
-
+	// 
     // force www.whvp.org (as opposed to http://whvp.org)
-	Director::forceWWW();
+	// Director::forceWWW();
+	// 
 } else {
-    define('EMAIL', 'me@briant.me');
-    Email::send_all_emails_to(EMAIL);
+    Email::send_all_emails_to(ADMIN_EMAIL);
 }
-Email::setAdminEmail(EMAIL);
+Email::setAdminEmail(ADMIN_EMAIL);
 
 
-// Removing unused options in the CMS editor.
-// HtmlEditorConfig::get('cms')->removeButtons('tablecontrols');
-// HtmlEditorConfig::get('cms')->removeButtons('ssflash');
-
-// Higher image quality than default.
-GD::set_default_quality(85);
+/**
+ * CMS Configuration ------------------------------------------- */
 
 // CMS Theme overrides
 LeftAndMain::setApplicationName('Admin Console: Whatcom Historic Views and Places');
@@ -53,13 +57,28 @@ LeftAndMain::set_application_link('http://whvp.briant.me/');
 LeftAndMain::require_css(PROJECT_DIR.'/css/bt_cms_overrides.css');
 // LeftAndMain::require_javascript(PROJECT_DIR.'/js/bt_cms_overrides.js');
 
+// Customize CMS Menu
 CMSMenu::remove_menu_item('ReportAdmin');
+/**
+ * @param string $code 			  Unique identifier for this menu item
+ * @param string $menuTitle 	  Localized title showing in the menu bar
+ * @param string $url 			  A relative URL that will be linked in the menu bar.
+ * @param string $controllerClass The controller class for this menu, defaults to null
+ * @param mixed  $priority     	  Defaults to -1
+ */
+// CMSMenu::add_menu_item($code, $menuTitle, $url, $controllerClass, mixed $priority);
 
-// CMSMenu::add_menu_item(string $code, string $menuTitle, string $url, 
-// 						  string $controllerClass=null, mixed $priority=-1);
+// Removing unused options in the CMS editor.
+// HtmlEditorConfig::get('cms')->removeButtons('tablecontrols');
+// HtmlEditorConfig::get('cms')->removeButtons('ssflash');
 
-Object::add_extension('Image', 'SiteImage');
+/** ----------------------------------------------------- */
 
-SpamProtectorManager::set_spam_protector('RecaptchaProtector');
+
+// Higher image quality than default.
+GD::set_default_quality(85);
+
+// Dev server credentials, update to clients server for Live server
 RecaptchaField::$public_api_key = '6LfJVeUSAAAAAHpUka_PlERGrfwWYehZzj71Z9pR';
 RecaptchaField::$private_api_key = '6LfJVeUSAAAAADmR0c6w5A7qO2FvpTLNH5gEA3Qv';
+SpamProtectorManager::set_spam_protector('RecaptchaProtector');

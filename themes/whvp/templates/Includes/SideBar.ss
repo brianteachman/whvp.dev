@@ -1,4 +1,4 @@
-<aside class="">
+<aside class="side-bar dark-grey-bg">
 	<% if $Menu(1) %>
 		<nav class="secondary">
 			<% with $Level(1) %>

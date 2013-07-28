@@ -2,12 +2,14 @@
 
 		<div class="row-fluid">
 
-			<div class="span4">
-				<% include SideBar %>
+			<div class="span9">
+				<div class="content">
+					$Content
+				</div>
 			</div>
 
-			<div class="span8">
-				<div class="content">$Content</div>
+			<div class="span3">
+				<% include SideBar %>
 			</div>
 
 			$Form
