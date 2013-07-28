@@ -5,7 +5,7 @@
 			<br>
 			<% include FooterNavigation %>
         </div>
-		<!-- <small>Site by <a href="http://briant.me">Brian</a> (TeachmanWeb)</small> -->
+		<!-- <small>Site by <a href="http://briant.me">Brian Teachman</a> (TeachmanWeb)</small> -->
 
         <div id="Bottom">
         	<div class="site-img">

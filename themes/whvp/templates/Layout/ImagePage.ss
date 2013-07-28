@@ -11,7 +11,7 @@
 					<div class="site-img">
 						<img src="{$ThemeDir}/img/site/{$URLSegment}.jpg" alt="{$Title}, " class="light-blue-bg img-rounded">
 					</div>
-					<div class="content">
+					<div>
 						$Content
 					</div>
 				</div>

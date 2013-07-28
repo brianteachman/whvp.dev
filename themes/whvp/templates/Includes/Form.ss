@@ -1,5 +1,5 @@
 <!-- <form $FormAttributes> -->
-<form class="form-horizontal" action="" method="post">
+<form class="form-horizontal contact" action="/contact/Form" method="post">
     <% if $Message %>
         <p id="{$FormName}_error" class="message $MessageType">$Message</p>
     <% else %>

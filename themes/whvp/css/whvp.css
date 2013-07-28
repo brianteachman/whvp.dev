@@ -99,11 +99,21 @@ header {
 /* 
   SearchForm ----------------- */
 .search-box {
-    margin: 1em 0;
+    margin: 2em auto;
 }
-.search-input-box {
-    background-color: #d3d0c7;
+.form-search > input[type="text"],
+.form-search > button {
+    padding: 10px 10px 8px 10px; 
+    font-size: 120%;
     color: #131313;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    border-radius: 5px; 
+}
+.form-search > input[type="text"] {
+    width: 230px;
+    height: 100%;
+    background-color: #d3d0c7;
 }
 
 
@@ -281,6 +291,13 @@ header.site-images {
     }
 }
 
+
+/* 
+  UTILITIES --------------- */
+
+form.contact {
+    width: 100%;
+}
 
 /* 
   UTILITIES --------------- */
