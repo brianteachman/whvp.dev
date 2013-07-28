@@ -5,6 +5,7 @@
 					<img src="{$ThemeDir}/img/site/image-l.jpg"
 						 width="700" 
 						 height="241"
+						 class="light-blue-bg"
 						 alt="">
 					<a href="http://whvp.dev/site-images-info/image-l"  
 					   class="badge info-btn pos-top-left" 
@@ -17,6 +18,7 @@
 					<img src="{$ThemeDir}/img/site/image-m.jpg"
 						 width="317" 
 						 height="241"
+						 class="light-blue-bg"
 						 alt="">
 					<a href="http://whvp.dev/site-images-info/image-m" 
 					   class="badge info-btn pos-top-left" 

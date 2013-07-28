@@ -46,4 +46,29 @@ class Page_Controller extends ContentController {
 		// Requirements::themedCSS('form'); 
 	}
 
+	/**
+     * Search form action
+     * 
+     * @param $data array The user input.
+     * @param $form SearchForm The form itself for referencing it.
+     * @param $request Request generated for this action.
+     * @return ViewableData For empty results redirect back, otherwise return the results in an array and use the SearchResults page.
+     */
+    public function results($data, $form, $request) {
+        if(!empty($data['Search'])) {
+            
+            $templateData = array(
+                'Results' => $form->getResults(8, $data),
+                'SearchQueryTitle' => $form->getSearchQuery($data),
+            );
+            
+            return $this->customise($templateData)->renderWith(array(
+                'Page_results',
+                'Page',
+            ));
+        } else {
+            Director::redirectBack();
+            return;
+        }
+    }
 }
