@@ -1,11 +1,12 @@
-<aside class="side-bar dark-grey-bg">
+<aside class="side-bar light-blue-bg text-left">
 	<% if $Menu(1) %>
-		<nav class="secondary">
+		<nav class="">
 			<% with $Level(1) %>
-				<h3>
-					$MenuTitle
-				</h3>
-				<ul>
+			    <ul class="nav nav-list">
+
+				    <li class="list-header"><h3>$MenuTitle</h3></li>
+				    <li class="divider"></li>
+
 					<% include SidebarMenu %>
 				</ul>
 			<% end_with %>

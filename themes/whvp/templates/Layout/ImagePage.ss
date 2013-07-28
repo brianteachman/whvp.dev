@@ -1,11 +1,19 @@
 		<% include Header %>
 
 		<div class="row-fluid">
+			<h2>Image Number: {$ImageID}-{$ImageGrpID}</h2>
+		</div>
+		
+		<div class="row-fluid">
 			<div class="content">
 				<div class="span9">
-					<h2>Image Number: {$ImageID}-{$ImageGrpID}</h2>
-					<img src="{$ThemeDir}/img/site/{$URLSegment}.jpg" alt="{$Title}, " class="img-rounded">
-					$Content
+
+					<div class="site-img">
+						<img src="{$ThemeDir}/img/site/{$URLSegment}.jpg" alt="{$Title}, " class="light-blue-bg img-rounded">
+					</div>
+					<div class="content">
+						$Content
+					</div>
 				</div>
 
 				<div class="span3">

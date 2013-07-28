@@ -10,7 +10,7 @@
             <ul class="footer-nav" id="NavMenu">
             <% loop $Menu(1) %>
                 <li class="$LinkingMode">
-                    <a href="$Link" title="$Title.XML">$MenuTitle.XML</a>
+                    <a href="$Link" title="$Title.XML"><b>$MenuTitle.XML</b></a>
                     <span class="padd">/</span>
                 </li>
             <% end_loop %>

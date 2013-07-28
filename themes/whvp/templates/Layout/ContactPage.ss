@@ -2,7 +2,7 @@
 
 		<div class="row-fluid">
 
-			<div class="span8">
+			<div class="span9">
 
 				<div class="content">
 					<% if IsSuccess && SubmitText %>
@@ -15,8 +15,8 @@
 
 			</div>
 
-			<div class="span4">
-				<% include SideBar %>
+			<div class="span3">
+				<% include PageSideBar %>
 			</div>
 		</div>
 
