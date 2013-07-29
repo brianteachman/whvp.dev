@@ -7,7 +7,7 @@
 						 height="241"
 						 class="light-blue-bg"
 						 alt="">
-					<a href="http://whvp.dev/site-images-info/image-l"  
+					<a href="{$BaseHref}site-images-info/image-l"  
 					   class="badge info-btn pos-top-left" 
 					   title="See Image L on the Site Image Info page">L</a>
 				</div>
@@ -20,7 +20,7 @@
 						 height="241"
 						 class="light-blue-bg"
 						 alt="">
-					<a href="http://whvp.dev/site-images-info/image-m" 
+					<a href="{$BaseHref}site-images-info/image-m" 
 					   class="badge info-btn pos-top-left" 
 					   title="See Image M on the Site Image Info page">M</a>
 
