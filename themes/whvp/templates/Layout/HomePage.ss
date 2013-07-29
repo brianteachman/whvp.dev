@@ -2,10 +2,10 @@
 			<div class="span12 header-banner">
 
 				<img src="{$BaseHref}images/header-banner.jpg" alt="Homepage image">
-				<a href="http://whvp.dev/site-images-info/image-a"  
+				<a href="{$BaseHref}site-images-info/image-a"  
 				   class="badge info-btn pos-top-left" 
 				   title="See Image A on the Site Image Info page">A</a>
-			    <a href="http://whvp.dev/site-images-info/image-b"  
+			    <a href="{$BaseHref}site-images-info/image-b"  
 				   class="badge info-btn pos-bottom-right" 
 				   title="See Image B on the Site Image Info page">B</a>
 
@@ -45,7 +45,7 @@
 								 width="118"
 								 height="135"
 								 alt="See Image C on the Site Images page.">
-							<a href="http://whvp.dev/site-images-info/image-c"  
+							<a href="{$BaseHref}site-images-info/image-c"  
 							   class="pos-top-left badge info-btn" 
 							   title="See Image C on the Site Image Info page">C</a>
 						</li>
@@ -55,7 +55,7 @@
 								 width="194"
 								 height="135"
 								 alt="See Image D on the Site Images page.">
-							<a href="http://whvp.dev/site-images-info/image-d"  
+							<a href="{$BaseHref}site-images-info/image-d"  
 							   class="badge info-btn pos-top-left" 
 							   title="See Image D on the Site Image Info page">D</a>
 						</li>
@@ -65,7 +65,7 @@
 								 width="143"
 								 height="135"
 								 alt="See Image E on the Site Images page.">
-							<a href="http://whvp.dev/site-images-info/image-e"  
+							<a href="{$BaseHref}site-images-info/image-e"  
 							   class="badge info-btn pos-top-left" 
 							   title="See Image E on the Site Image Info page">E</a>
 						</li>
@@ -75,7 +75,7 @@
 								 width="186"
 								 height="135"
 								 alt="See Image F on the Site Images page.">
-							<a href="http://whvp.dev/site-images-info/image-f"  
+							<a href="{$BaseHref}site-images-info/image-f"  
 							   class="badge info-btn pos-top-left" 
 							   title="See Image F on the Site Image Info page">F</a>
 						</li>
@@ -85,7 +85,7 @@
 								 width="226"
 								 height="135"
 								 alt="See Image G on the Site Images page.">
-							<a href="http://whvp.dev/site-images-info/image-g"  
+							<a href="{$BaseHref}site-images-info/image-g"  
 							   class="badge info-btn pos-top-left" 
 							   title="See Image G on the Site Image Info page">G</a>
 						</li>
