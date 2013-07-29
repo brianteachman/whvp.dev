@@ -9,7 +9,7 @@
 
         <div id="Bottom">
         	<div class="site-img">
-				<img src="{$themeDir}/img/site/image-j.png" 
+				<img src="{$BaseHref}images/image-j.png" 
 					 alt="Bottom image" />
 				<a href="http://whvp.dev/site-images/image-j"  
 				   class="badge info-btn pos-top-left" 

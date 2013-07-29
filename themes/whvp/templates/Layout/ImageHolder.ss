@@ -2,7 +2,7 @@
 
 			<div class="span7">
 				<div class="site-img">
-					<img src="{$ThemeDir}/img/site/image-l.jpg"
+					<img src="{$BaseHref}images/image-l.jpg"
 						 width="700" 
 						 height="241"
 						 class="light-blue-bg"
@@ -15,7 +15,7 @@
 
 			<div class="span5">
 				<div class="site-img">
-					<img src="{$ThemeDir}/img/site/image-m.jpg"
+					<img src="{$BaseHref}images/image-m.jpg"
 						 width="317" 
 						 height="241"
 						 class="light-blue-bg"

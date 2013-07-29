@@ -1,12 +1,13 @@
 /*
 
-main        background-color: #f1dca5;  BEIGE-ISH
-p-text      font-color:       #5f757a;  BLUE
-h1-h4       font-color:       #325771;  DARK BLUE
+main        background-color: #f1dca5;              BEIGE-ISH
+            background-color: rgb(241, 220, 165);   BEIGE-ISH
+p-text      font-color:       #5f757a;              BLUE
+h1-h4       font-color:       #325771;              DARK BLUE
 
-box         background-color: #805c38;  BROWN
-nav, search background-color: #d3d0c7;  GREY
-nav, search font-color:       #131313;  DARK GREY
+box         background-color: #805c38;              BROWN
+nav, search background-color: #d3d0c7;              GREY
+nav, search font-color:       #131313;              DARK GREY
 
 */
 

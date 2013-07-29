@@ -21,7 +21,7 @@ class ContactPage extends Emailer {
 class ContactPage_Controller extends Emailer_Controller {
     
     // Define email subject
-	protected $subject = 'Correspondence from whvp.org Contact form';
+	protected $subject = 'A message from whvp.org Contact form';
     
     /**
      * Implement abstract Emailer->ContactForm()
@@ -76,7 +76,7 @@ class ContactPage_Controller extends Emailer_Controller {
 
         // enable RecaptchaProtection
         if(class_exists('SpamProtectorManager')) {
-            // SpamProtectorManager::update_form($form);
+            SpamProtectorManager::update_form($form);
         }
 
         return $form;

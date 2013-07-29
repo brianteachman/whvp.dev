@@ -9,7 +9,7 @@
 				<div class="span9">
 
 					<div class="site-img">
-						<img src="{$ThemeDir}/img/site/{$URLSegment}.jpg" alt="{$Title}, " class="light-blue-bg img-rounded">
+						<img src="{$BaseHref}images/{$URLSegment}.jpg" alt="{$Title}, " class="light-blue-bg img-rounded">
 					</div>
 					<div>
 						$Content

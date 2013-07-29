@@ -1,5 +1,5 @@
-<div class="site-img">
-	<img class="bg" src="/{$themeDir}/img/geographic-scope-v2.jpg" alt="Map showing whvp.org's areas of interest.">
+<div class="">
+	<img class="bg" src="{$BaseHref}images/image-i.jpg" alt="Map showing whvp.org's areas of interest.">
 
 	<a href="http://whvp.dev/site-images-info/image-i" 
 	   class="badge info-btn pos-top-right" 

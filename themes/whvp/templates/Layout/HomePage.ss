@@ -1,7 +1,7 @@
 		<header class="row-fluid" role="banner">
 			<div class="span12 header-banner">
 
-				<img src="{$themeDir}/img/site/header-banner.jpg" alt="Homepage image">
+				<img src="{$BaseHref}images/header-banner.jpg" alt="Homepage image">
 				<a href="http://whvp.dev/site-images-info/image-a"  
 				   class="badge info-btn pos-top-left" 
 				   title="See Image A on the Site Image Info page">A</a>
@@ -41,7 +41,7 @@
 					<ul class="inline">
 						<li class="site-img">
 							<img class="light-blue-bg img-rounded" 
-								 src="{$themeDir}/img/site/image-c.jpg" 
+								 src="{$BaseHref}images/image-c.jpg" 
 								 width="118"
 								 height="135"
 								 alt="See Image C on the Site Images page.">
@@ -51,7 +51,7 @@
 						</li>
 						<li class="site-img">
 							<img class="light-blue-bg img-rounded" 
-								 src="{$themeDir}/img/site/image-d.jpg" 
+								 src="{$BaseHref}images/image-d.jpg" 
 								 width="194"
 								 height="135"
 								 alt="See Image D on the Site Images page.">
@@ -61,7 +61,7 @@
 						</li>
 						<li class="site-img">
 							<img class="light-blue-bg img-rounded" 
-								 src="{$themeDir}/img/site/image-e.jpg" 
+								 src="{$BaseHref}images/image-e.jpg" 
 								 width="143"
 								 height="135"
 								 alt="See Image E on the Site Images page.">
@@ -71,7 +71,7 @@
 						</li>
 						<li class="site-img">
 							<img class="light-blue-bg img-rounded" 
-								 src="{$themeDir}/img/site/image-f.jpg" 
+								 src="{$BaseHref}images/image-f.jpg" 
 								 width="186"
 								 height="135"
 								 alt="See Image F on the Site Images page.">
@@ -81,7 +81,7 @@
 						</li>
 						<li class="site-img">
 							<img class="light-blue-bg img-rounded" 
-								 src="{$themeDir}/img/site/image-g.jpg" 
+								 src="{$BaseHref}images/image-g.jpg" 
 								 width="226"
 								 height="135"
 								 alt="See Image G on the Site Images page.">

@@ -58,7 +58,7 @@
 		        	<a href="#modalView" 
 		        	   role="button" 
 		        	   data-toggle="modal">
-		        		<img src="/{$ThemeDir}/img/site/wfd-image.jpg" alt="...">
+		        		<img src="{$BaseHref}images/wfd-image.jpg" alt="...">
 		        	</a>
 					<!-- see the modal done below. -->
 	        	</div>
@@ -83,7 +83,7 @@
 				<h3 id="myModalLabel">$Title</h3>
 			</div>
 			<div class="modal-body">
-				<img src="/{$ThemeDir}/img/site/wfd-image.jpg" alt="...">
+				<img src="{$BaseHref}images/wfd-image.jpg" alt="...">
 			</div>
 			<div class="modal-footer">
 				<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
