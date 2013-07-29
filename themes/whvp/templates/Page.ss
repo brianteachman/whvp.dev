@@ -16,7 +16,7 @@
     <meta property="og:description" content="{$MetaDescription}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{$AbsoluteLink}">
-    <meta property="og:image" content="{$ThemeDir}/img/site/image-m.jpg">
+    <meta property="og:image" content="{$BaseHref}images/image-m.jpg">
     <!-- end: Facebook Open Graph -->
     
 	<link href="/{$ThemeDir}/img/favicon.ico" rel="icon" type="image/x-icon" />
