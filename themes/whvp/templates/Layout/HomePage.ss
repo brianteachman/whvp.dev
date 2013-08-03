@@ -20,6 +20,7 @@
 		<article class="row-fluid homepage-article">
 			<div class="span7 content">
 				$Content
+				$Form
 			</div>
 
 			<div class="span5 search-box">
