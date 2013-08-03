@@ -30,7 +30,7 @@
         <%-- <script src="/{$ThemeDir}/js/html5shiv.js"></script> --%>
     <![endif]-->
 </head>
-<body class="$URLSegment<% if not $Menu(2) %> no-sidebar<% end_if %>" id="$ClassName">
+<body class="$URLSegment" id="$ClassName">
 
 	<div class="container-fluid typography" role="main">
 
@@ -49,10 +49,14 @@
 
 $(document).ready(function() {
 
-    setFooterImageWidths();
+    setHomePageFooterImageWidths();
+    setSiteImagesHeaderImagesWidths();
+    setFooterImageWidth();
 
     $(window).resize(function() {
-        setFooterImageWidths();
+        setHomePageFooterImageWidths();
+        setSiteImagesHeaderImagesWidths();
+        setFooterImageWidth();
     });
     
 });
