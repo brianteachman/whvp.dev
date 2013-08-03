@@ -28,7 +28,7 @@ if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
 Object::add_extension('SiteConfig', 'CustomSiteConfig');
 
 // See: mysite/code/SiteImage.php
-Object::add_extension('Image', 'SiteImage');
+// Object::add_extension('Image', 'SiteImage');
 
 
 /**
