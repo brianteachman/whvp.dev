@@ -25,7 +25,7 @@ if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
  * CMS Class overrides ------------------------------------------ */
 
 // See: mysite/code/CustomSiteConfig.php
-Object::add_extension('SiteConfig', 'CustomSiteConfig');
+// Object::add_extension('SiteConfig', 'CustomSiteConfig');
 
 // See: mysite/code/SiteImage.php
 // Object::add_extension('Image', 'SiteImage');
@@ -79,7 +79,7 @@ CMSMenu::remove_menu_item('ReportAdmin');
 GD::set_default_quality(85);
 
 // Dev server credentials, update to clients server for Live server
-RecaptchaField::$public_api_key = '6LfJVeUSAAAAAHpUka_PlERGrfwWYehZzj71Z9pR';
-RecaptchaField::$private_api_key = '6LfJVeUSAAAAADmR0c6w5A7qO2FvpTLNH5gEA3Qv';
-SpamProtectorManager::set_spam_protector('RecaptchaProtector');
-RecaptchaField::$private_api_key = '6LfJVeUSAAAAADmR0c6w5A7qO2FvpTLNH5gEA3Qv';
+// RecaptchaField::$public_api_key = '6LfJVeUSAAAAAHpUka_PlERGrfwWYehZzj71Z9pR';
+// RecaptchaField::$private_api_key = '6LfJVeUSAAAAADmR0c6w5A7qO2FvpTLNH5gEA3Qv';
+// SpamProtectorManager::set_spam_protector('RecaptchaProtector');
+// RecaptchaField::$private_api_key = '6LfJVeUSAAAAADmR0c6w5A7qO2FvpTLNH5gEA3Qv';
