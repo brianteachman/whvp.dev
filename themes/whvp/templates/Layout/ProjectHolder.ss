@@ -4,12 +4,22 @@
 
 			<div class="span9">
 				<div class="content">
-					$Content
+
+					<div>
+						<h2>Research and Projects Underway:</h2>
+						$ProjectsUnderway
+					</div>
+
+					<div>
+						<h2>Projects Completed for Others:</h2>
+						$ProjectsCompleted
+					</div>
+
 				</div>
 			</div>
 
 			<div class="span3">
-				<% include SideBar %>
+				<% include PageSideBar %>
 			</div>
 
 			$Form
