@@ -1,0 +1,15 @@
+// {
+// 	"name": "silverstripe/siteimages",
+// 	"description": "Images that can be tied to thoughout your application.",
+// 	"type": "silverstripe-module",
+// 	"keywords": ["silverstripe", "images"],
+// 	"authors": [
+// 		{
+// 			"name": "Brian Teachman",
+// 			"email": "brian@teachmanweb.com"
+// 		}
+// 	],
+// 	"require": {
+// 		"silverstripe/framework": "3.*"
+// 	}
+// }

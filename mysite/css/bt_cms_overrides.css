@@ -10,3 +10,32 @@
 	padding-right: 7px; 
 	border-right: 1px solid #19435c; 
 }
+
+/* Project Label */
+.label,
+.label-text,
+.qr-code {
+    /*border: #000 solid 1px;*/
+}
+.label {
+    height: 100px;
+    width: 800px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    /*border: #000 solid 1px;*/
+    }
+    .label div {
+        float: left;
+        }
+        .qr-code {
+            height: 100px;
+            width: 100px;
+        }
+        .label-text {
+            font-size: 18px;
+            line-height: 150%;
+            margin-top: 10px;
+            }
+            .label-text span {
+                background-color: #eeeeee;
+            }

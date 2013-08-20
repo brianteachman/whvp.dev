@@ -304,7 +304,15 @@ img.bg {
 }
 
 .message-pointer {
-    padding-bottom: 1em;
+    position: absolute;
+    top: 0;
+    padding: 0 1em 1em 1em;
+    -webkit-border-bottom-right-radius: 10px;
+     -webkit-border-bottom-left-radius: 10px;
+        -moz-border-radius-bottomright: 10px;
+         -moz-border-radius-bottomleft: 10px;
+            border-bottom-right-radius: 10px;
+             border-bottom-left-radius: 10px;
 }
 .geo-header > h1 {
     margin-left: 1em;
@@ -376,6 +384,31 @@ img.bg {
            -moz-box-shadow: 2px 2px 6px #919191;
                 box-shadow: 2px 2px 6px #919191;
         }
+
+/* site-images page ImagesHolder */
+.site-image-holder {
+    width: 100%;
+    overflow: hidden;
+    }
+    .img-box {
+        width: 30%;
+        float: left;
+        padding: 10px;
+        margin: 0 0 0 10px;
+        }
+        .img-box h2 {
+            text-align: center;
+            }
+        .img-box a {
+            /*margin: 0 auto;*/
+            /*position: relative;*/
+            }
+            .img-box a img {
+                height: 200px;
+                /*position: absolute;*/
+                /*clip: rect(0 100px 200px 0);*/
+                }
+
 @media (max-width: 600px) {
     header.site-images {
         padding: 0 0.5em;

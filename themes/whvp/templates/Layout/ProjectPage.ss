@@ -8,11 +8,13 @@
 
 	    			<div class="row-fluid">
 		        		<div class="span12">
+
 		        			<div class="callout-link lead">
-		        				<a href="">
+		        				<a href="{$Label}">
 		        					Download the Woodstock Farm Park Image Display Guide
 		        				</a>
 		        			</div>
+		        			
 		        		</div>
 		        	</div>
 
@@ -26,9 +28,13 @@
 				        	<h3>Articles and Presentations</h3>
 				            <ul class="unstyled">
 				        		<hr>
-								<li><a href="#">Link to a resource 1...</a></li>
-								<li><a href="#">Link to a resource 2...</a></li>
-								<li><a href="#">Link to a resource 3...</a></li>
+				        		<% loop $Resources %>
+				        		<% if $Type != 'Map' %>
+								<li>
+									<a href="{$File.Filename}">$Name</a>
+								</li>
+								<% end_if %>
+								<% end_loop %>
 				            </ul>
 				        </div>
 
@@ -36,9 +42,13 @@
 				        	<h3 class="">Maps</h3>
 					        <ul class="unstyled">
 					        	<hr>
-					            <li><a href="#">&raquo; map# xxx-WFD</a></li>
-					            <li><a href="#">&raquo; map# xxx-WFD</a></li>
-					            <li><a href="#">&raquo; map# xxx-WFD</a></li>
+					        	<% loop $Resources %>
+				        		<% if $Type == 'Map' %>
+								<li>
+									<a href="{$File.Filename}">$Name</a>
+								</li>
+								<% end_if %>
+								<% end_loop %>
 					        </ul>
 							<!-- see the modal done below. -->
 				        </div>

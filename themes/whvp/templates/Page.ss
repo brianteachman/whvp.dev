@@ -40,13 +40,11 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="/{$ThemeDir}/js/bootstrap.min.js"></script>
-<script src="/{$ThemeDir}/js/jquery.imgCenter.js"></script>
 <script src="/{$ThemeDir}/js/script.js"></script>
 
 <%-- require javascript('framework/thirdparty/jquery/jquery.js') --%>
 
 <script>
-
 $(document).ready(function() {
 
     setHomePageFooterImageWidths();
@@ -58,9 +56,7 @@ $(document).ready(function() {
         setSiteImagesHeaderImagesWidths();
         setFooterImageWidth();
     });
-    
 });
-
 </script>
 
 </body>
