@@ -54,7 +54,7 @@ class Resource extends DataObject
         $projects = new TreeDropdownField(
             'ProjectID',           // Field name
             'Associated Project',  // Field title
-            'SiteTree'             // object-type to list in the tree
+            'ProjectHolder'        // object-type to list in the tree
         );
         $projects->setTreeBaseID(8);
         $fields->addFieldToTab('Root.Main', $projects);

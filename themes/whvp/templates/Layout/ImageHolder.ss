@@ -39,14 +39,14 @@
 		<div class="row-fluid">
 			<div class="span12">
 
-				<section>
+				<section class="site-image-holder">
 						
 					<% loop $Children %>
 		        	<div class="img-box light-blue-bg">
 		        		<h2>Image $SiteLabel</h2>
 			        	<hr>
 			            <a href="{$AbsoluteLink}">
-			            	<img data-original="images/{$URLSegment}.jpg" src="{$BaseHref}images/{$URLSegment}.jpg" width="240" height="150" alt="Image $SiteLabel" />
+			            	<img data-original="images/{$URLSegment}.jpg" src="{$BaseHref}images/{$URLSegment}.jpg" alt="Image $SiteLabel" />
 			            </a>
 
 			            <div class="projectInfo">

@@ -1,13 +1,13 @@
 <div class="">
 	<img class="bg" src="{$BaseHref}images/image-i.jpg" alt="Map showing whvp.org's areas of interest.">
 
-	<div class="faded-beige-bg text-center message-pointer">
+	<div class="faded-beige-bg text-center geo-focus-btn">
 		<a href="#message" class="btn btn-large light-beige-bg">
 			Focus area <i class="icon-arrow-down"></i>
 		</a>
 	</div>
 
-	<a href="http://whvp.dev/site-images-info/image-i" 
+	<a href="http://whvp.dev/site-images/image-i" 
 	   class="badge info-btn pos-top-right" 
 	   title="See Image A on the Site Image Info page">I</a>
 </div>

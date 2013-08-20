@@ -10,7 +10,7 @@
 		        		<div class="span12">
 
 		        			<div class="callout-link lead">
-		        				<a href="{$Label}">
+		        				<a href="{$BaseHref}resources/PCL-1855-1887.pdf">
 		        					Download the Woodstock Farm Park Image Display Guide
 		        				</a>
 		        			</div>
@@ -25,9 +25,8 @@
 			        	</div>
 
 				        <div class="span4">
-				        	<h3>Articles and Presentations</h3>
+				        	<h3 class="resource-header">Articles and Presentations</h3>
 				            <ul class="unstyled">
-				        		<hr>
 				        		<% loop $Resources %>
 				        		<% if $Type != 'Map' %>
 								<li>
@@ -39,9 +38,8 @@
 				        </div>
 
 				        <div class="span4">
-				        	<h3 class="">Maps</h3>
+				        	<h3 class="resource-header">Maps</h3>
 					        <ul class="unstyled">
-					        	<hr>
 					        	<% loop $Resources %>
 				        		<% if $Type == 'Map' %>
 								<li>
