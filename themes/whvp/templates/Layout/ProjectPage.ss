@@ -6,31 +6,31 @@
 
 	    		<div class="span12">
 
-	    			<div class="row-fluid">
+	    			<!-- <div class="row-fluid">
 		        		<div class="span12">
 
-		        			<div class="callout-link lead">
-		        				<a href="{$BaseHref}resources/PCL-1855-1887.pdf">
-		        					Download the Woodstock Farm Park Image Display Guide
-		        				</a>
+		        			<div class="">
+		        				
 		        			</div>
 		        			
 		        		</div>
-		        	</div>
+		        	</div> -->
 
 			        <div class="row-fluid">
 
 			        	<div class="span4">
-			        		<div class="content">$Content</div>
+			        		<% if $Content %>
+			        		<div class="content beige-bg">$Content</div>
+			        		<% end_if %>
 			        	</div>
 
 				        <div class="span4">
-				        	<h3 class="resource-header">Articles and Presentations</h3>
+				        	<h3 class="resource-header">Articles &amp; Presentations</h3>
 				            <ul class="unstyled">
 				        		<% loop $Resources %>
 				        		<% if $Type != 'Map' %>
 								<li>
-									<a href="{$File.Filename}">$Name</a>
+									<a href="{$BaseHref}resources/{$File.Name}">$Name</a>
 								</li>
 								<% end_if %>
 								<% end_loop %>
@@ -38,12 +38,12 @@
 				        </div>
 
 				        <div class="span4">
-				        	<h3 class="resource-header">Maps</h3>
+				        	<h3 class="resource-header">Maps &amp; Images</h3>
 					        <ul class="unstyled">
 					        	<% loop $Resources %>
 				        		<% if $Type == 'Map' %>
 								<li>
-									<a href="{$File.Filename}">$Name</a>
+									<a href="{$BaseHref}resources/{$File.Name}">$Name</a>
 								</li>
 								<% end_if %>
 								<% end_loop %>

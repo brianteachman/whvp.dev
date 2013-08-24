@@ -2,9 +2,94 @@
 
 Headers (h1 - h6)
 Text (p, blockquote, pre)
-Lists (ul, li)
+Lists (ol, ul, li)
 CSS alignment (img.left, .left, .right etc)
 Tables
 Miscellaneous (hr etc)
 
+P, BLOCKQUOTE
+H1-6
+UL, OL, LI
+TABLE
+STRONG, EM, U
+A
+
 */
+
+.typography {
+    /*margin-bottom: 20px;*/
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+
+/* HEADERS */
+.typography h1,
+.typography h2,
+.typography h3,
+.typography h4,
+.nav a { text-shadow: 4px 4px 4px #aaa; }
+
+.typography h1 {
+    /*font-size: 36px;*/
+    /*color: #F77;*/
+}
+
+.typography h2 {
+    /*font-size: 36px;*/
+}
+
+
+/* LINKS */
+.typography a {
+   color: #005580;
+    }
+    .typography a:hover,
+    .typography a:focus {
+        color: #0088cc;
+        }
+
+/* UTILITIES */
+.typography .acronym {
+    font-size: 17px;
+    font-weight: bold;
+    color: #4d4d4d;
+    }
+.typography .standout {
+    font-size: 20px;
+    line-height: 28px
+    }
+.typography .double-linebr {
+    margin-bottom: 1.3em;
+    }
+.typography .citation {
+    font-size: 16px;
+    line-height: 20px;
+    /*font-style: italic;*/
+    margin-bottom: 0;
+    }
+    .typography .citation .creator {
+        /*font-size: 16px;*/
+        /*line-height: 20px;*/
+        font-style: italic;
+        /*margin-bottom: 0;*/
+        }
+    .typography .citation .title {
+        /*font-size: 16px;*/
+        /*line-height: 20px;*/
+        /*font-style: italic;*/
+        /*margin-bottom: 0;*/
+        }
+    .typography .citation .publisher {
+        /*font-size: 16px;*/
+        /*line-height: 20px;*/
+        /*font-style: italic;*/
+        /*margin-bottom: 0;*/
+        }
+    .typography .citation .date {
+        /*font-size: 16px;*/
+        /*line-height: 20px;*/
+        /*font-style: italic;*/
+        /*margin-bottom: 0;*/
+        }

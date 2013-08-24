@@ -6,7 +6,7 @@ class SiteImage extends DataObject
 {
     public static $db = array(
         'Name' => 'Varchar(100)',
-        'Description' => 'Text',
+        'Description' => 'HTMLText',
         // 'Number'  => 'Varchar(100)',
         'Created' => 'Date',
     );

@@ -1,0 +1,37 @@
+Page:
+    home:
+        Title: Home
+        URLSegment: home
+    about:
+        Title: About
+        URLSegment: about
+    focusarea:
+        Title: Geographic Focus
+        URLSegment: geographic-focus
+    projects:
+        Title: Projects
+        URLSegment: projects
+    staff:
+        Title: Woodstock Farm
+        URLSegment: woodstock-farm
+        Parent: =>Page.projects
+    services:
+        Title: Services
+        URLSegment: services
+    siteimages:
+        Title: Site Images
+        URLSegment: site-images
+    favorites:
+        Title: Favorites
+        URLSegment: favorites
+    contact:
+        Title: Contact
+        URLSegment: contact
+    notfound:
+        Title: Page not found
+        URLSegment: page-not-found
+        ErrorCode: 404 - Not Found
+    servererror:
+        Title: Server error
+        URLSegment: server-error
+        ErrorCode: 500 - Internal Server Error

@@ -6,7 +6,7 @@
 				<div class="content">
 
 					<div>
-						<h2>Research and Projects Underway:</h2>
+						<h2>Research &amp; Projects Underway:</h2>
 						$ProjectsUnderway
 					</div>
 

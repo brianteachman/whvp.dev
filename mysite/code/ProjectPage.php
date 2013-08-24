@@ -9,7 +9,6 @@ class ProjectPage extends Page {
 
     public static $db = array(
         'Shortcode' => 'Varchar(10)',
-        'LabelLink' => 'Varchar'
     );
 
     static $has_many = array(
@@ -18,9 +17,11 @@ class ProjectPage extends Page {
 
     public function getCMSFields() {
         $fields = parent::getCMSFields();
+
+        // This tab is added for some reason?
+        $fields->removeFieldFromTab('Root', 'Dependent');
         
         $fields->addFieldToTab('Root.Main', new TextField('Shortcode', 'Project Shortcode <small></small>'), 'Content');
-        $fields->addFieldToTab('Root.Main', new TextField('LabelLink', 'QR Code link for label'), 'Content');
 
         // Create config allowing record editing
         $config = GridFieldConfig_RelationEditor::create();
@@ -29,38 +30,35 @@ class ProjectPage extends Page {
             'Name' => 'Name',
             'Type' => 'Type',
             'Project.Title'=> 'Project' // Retrieve from a has-one relationship
-        )); 
+        ));
         $resources = new GridField(
             'Resources',       // Field name
             'Resource',        // Field title
             $this->Resource(), // List of all related resources
             $config
-        );      
+        );
         // Create a tab named "Resources" and add our field to it
         $fields->addFieldToTab('Root.Resources', $resources); 
 
-        // This tab is added for some reason?
-        $fields->removeFieldFromTab('Root', 'Dependent');
+//         $label = <<<LABEL
+//     <div class="label">
 
-        $label = <<<LABEL
-    <div class="label">
+//         <div class="qr-code">
+//             <img src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl={$url}" alt="">
+//         </div>
 
-        <div class="qr-code">
-            <img src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl={$url}" alt="">
-        </div>
-
-        <div class="label-text">
-            No. http://www.whvp.com/projects/<span class="image-link" title="Link to Subject Info">002-WF</span><br>
-            Photo by <span class="image-creator" title="Image Creator">Leslie Corbett</span>, <span class="image-date" title="Date Created">1923</span>, Courtesy <span class="image-owner" title="Image Rights Owner">Whatcom Museum</span>. <br>
-            Spotting by Tim Wahl, printing by Quicksilver Photolab
-        </div>
-    </div>
-LABEL;
-        $fields->addFieldToTab(
-            'Root.Main', 
-            new LiteralField('Label', $label),
-            'Metadata'
-        );
+//         <div class="label-text">
+//             No. http://www.whvp.com/projects/<span class="image-link" title="Link to Subject Info">002-WF</span><br>
+//             Photo by <span class="image-creator" title="Image Creator">Leslie Corbett</span>, <span class="image-date" title="Date Created">1923</span>, Courtesy <span class="image-owner" title="Image Rights Owner">Whatcom Museum</span>. <br>
+//             Spotting by Tim Wahl, printing by Quicksilver Photolab
+//         </div>
+//     </div>
+// LABEL;
+//         $fields->addFieldToTab(
+//             'Root.Main', 
+//             new LiteralField('Label', $label),
+//             'Metadata'
+//         );
 
         return $fields;
     }

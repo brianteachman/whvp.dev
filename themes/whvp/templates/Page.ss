@@ -22,6 +22,7 @@
 	<link href="/{$ThemeDir}/img/favicon.ico" rel="icon" type="image/x-icon">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,800' rel='stylesheet' type='text/css'>
     <% require themedCSS('bootstrap.min') %>
+    <% require themedCSS('typography') %>
     <% require themedCSS('whvp') %>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->

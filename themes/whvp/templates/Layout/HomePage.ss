@@ -2,10 +2,10 @@
 			<div class="span12 header-banner">
 
 				<img src="{$BaseHref}images/header-banner.jpg" alt="Homepage image">
-				<a href="{$BaseHref}site-images-info/image-a"  
+				<a href="{$BaseHref}site-images#image-a"  
 				   class="badge info-btn pos-top-left" 
 				   title="See Image A on the Site Image Info page">A</a>
-			    <a href="{$BaseHref}site-images-info/image-b"  
+			    <a href="{$BaseHref}site-images#image-b"  
 				   class="badge info-btn pos-bottom-right" 
 				   title="See Image B on the Site Image Info page">B</a>
 
