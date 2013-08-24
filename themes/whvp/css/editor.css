@@ -2,4 +2,4 @@
 @import 'typography.css';
  
 /* We want the backend editor to have a bigger font as well though */
-.typography * { font-size: 120%; line-height: 150%; }
+.typography * { font-size: 12px; line-height: 18px; }
