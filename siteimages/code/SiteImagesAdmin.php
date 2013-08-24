@@ -1,6 +1,6 @@
 <?php
 
-class SiteImagesAdmin extends DataObjectAsPageAdmin {
+class SiteImagesAdmin extends ModelAdmin {
     
     public static $managed_models = array(
         'SiteImage'

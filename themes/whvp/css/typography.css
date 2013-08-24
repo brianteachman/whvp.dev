@@ -1,18 +1,11 @@
 /*
 
-Headers (h1 - h6)
-Text (p, blockquote, pre)
-Lists (ol, ul, li)
-CSS alignment (img.left, .left, .right etc)
+Headers:       h1 - h6
+Text:          p, blockquote, pre
+Lists:         ol, ul, li
+CSS alignment: img.left, .left, .right, etc...
 Tables
-Miscellaneous (hr etc)
-
-P, BLOCKQUOTE
-H1-6
-UL, OL, LI
-TABLE
-STRONG, EM, U
-A
+Misc:          hr, em, strong, etc...
 
 */
 
@@ -21,7 +14,7 @@ A
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
-}
+    }
 
 
 /* HEADERS */
@@ -29,27 +22,19 @@ A
 .typography h2,
 .typography h3,
 .typography h4,
-.nav a { text-shadow: 4px 4px 4px #aaa; }
+.nav a { 
+    text-shadow: 4px 4px 4px #aaa; 
+    }
 
 .typography h1 {
     /*font-size: 36px;*/
     /*color: #F77;*/
-}
+    }
 
 .typography h2 {
     /*font-size: 36px;*/
-}
+    }
 
-
-hr {
-    /*background-color: #f1dca5;*/
-    border: 0;
-    height: 0;
-    border-top: 1px solid rgb(0, 0, 0);
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgb(241, 220, 165);
-    border-bottom: 1px solid rgba(241, 220, 165, 0.3);
-}
 
 /* LISTS */
 .typography .content ul {
@@ -77,6 +62,16 @@ hr {
     .typography a:focus {
         color: #0088cc;
         }
+
+
+.typography hr {
+    height: 0;
+    border: 0;
+    border-top: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgb(241, 220, 165);
+    border-bottom: 1px solid rgba(241, 220, 165, 0.3);
+    }
 
 
 /* UTILITIES */
