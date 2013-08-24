@@ -26,10 +26,6 @@ if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
 // See: mysite/code/CustomSiteConfig.php
 Object::add_extension('SiteConfig', 'CustomSiteConfig');
 
-// See: mysite/code/SiteImage.php
-// Object::add_extension('Image', 'SiteImage');
-
-
 /**
  * Environment Configuration ------------------------------------ */
 
@@ -37,10 +33,10 @@ Object::add_extension('SiteConfig', 'CustomSiteConfig');
 define('ADMIN_EMAIL', 'me@briant.me');
 
 if (Director::isLive()) {
-	// 
+    // 
     // force www.whvp.org (as opposed to http://whvp.org)
-	// Director::forceWWW();
-	// 
+    // Director::forceWWW();
+    // 
 } else {
     Email::send_all_emails_to(ADMIN_EMAIL);
 }
@@ -59,17 +55,17 @@ LeftAndMain::require_css(PROJECT_DIR.'/css/bt_cms_overrides.css');
 // Customize CMS Menu
 CMSMenu::remove_menu_item('ReportAdmin');
 /**
- * @param string $code 			  Unique identifier for this menu item
- * @param string $menuTitle 	  Localized title showing in the menu bar
- * @param string $url 			  A relative URL that will be linked in the menu bar.
+ * @param string $code            Unique identifier for this menu item
+ * @param string $menuTitle       Localized title showing in the menu bar
+ * @param string $url             A relative URL that will be linked in the menu bar.
  * @param string $controllerClass The controller class for this menu, defaults to null
- * @param mixed  $priority     	  Defaults to -1
+ * @param mixed  $priority        Defaults to -1
  */
 // CMSMenu::add_menu_item($code, $menuTitle, $url, $controllerClass, mixed $priority);
 
 // Removing unused options in the CMS editor.
-// HtmlEditorConfig::get('cms')->removeButtons('tablecontrols');
-// HtmlEditorConfig::get('cms')->removeButtons('ssflash');
+HtmlEditorConfig::get('cms')->removeButtons('tablecontrols');
+HtmlEditorConfig::get('cms')->removeButtons('ssflash');
 
 /** ----------------------------------------------------- */
 
@@ -82,3 +78,7 @@ RecaptchaField::$public_api_key = '6LfJVeUSAAAAAHpUka_PlERGrfwWYehZzj71Z9pR';
 RecaptchaField::$private_api_key = '6LfJVeUSAAAAADmR0c6w5A7qO2FvpTLNH5gEA3Qv';
 SpamProtectorManager::set_spam_protector('RecaptchaProtector');
 RecaptchaField::$private_api_key = '6LfJVeUSAAAAADmR0c6w5A7qO2FvpTLNH5gEA3Qv';
+
+
+// If DataObjects in the sitemap are needed, add extended dataobject
+// GoogleSiteMap::register_dataobject('SiteImage');

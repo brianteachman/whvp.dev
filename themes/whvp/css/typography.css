@@ -41,6 +41,34 @@ A
 }
 
 
+hr {
+    /*background-color: #f1dca5;*/
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgb(241, 220, 165);
+    border-bottom: 1px solid rgba(241, 220, 165, 0.3);
+}
+
+/* LISTS */
+.typography .content ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+    text-indent: -1em;
+    }
+    .typography .content li {
+        line-height: 140%;
+        }
+    .typography .content li:before {
+        /*font-size: 20px;*/
+        content: "\0BB \020";
+        font-size: 140%;
+        margin-right: 1px;
+        }
+
+
 /* LINKS */
 .typography a {
    color: #005580;
@@ -49,6 +77,7 @@ A
     .typography a:focus {
         color: #0088cc;
         }
+
 
 /* UTILITIES */
 .typography .acronym {
