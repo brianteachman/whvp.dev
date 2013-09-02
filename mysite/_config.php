@@ -5,7 +5,7 @@ $project = 'mysite';
 define('PROJECT_DIR', $project);
 
 global $database;
-$database = 'briantme_whvp2';
+$database = 'whvp';
 require_once('conf/ConfigureFromEnv.php');
 
 i18n::set_locale('en_US');
@@ -82,3 +82,8 @@ RecaptchaField::$private_api_key = '6LfJVeUSAAAAADmR0c6w5A7qO2FvpTLNH5gEA3Qv';
 
 // If DataObjects in the sitemap are needed, add extended dataobject
 // GoogleSiteMap::register_dataobject('SiteImage');
+
+// log errors and warnings
+SS_Log::add_writer(new SS_LogFileWriter(Director::baseFolder().'/logs/disturbance.log'), SS_Log::WARN, '<=');
+// or just errors
+// SS_Log::add_writer(new SS_LogFileWriter(Director::baseFolder().'/logs/disturbance.log'), SS_Log::ERR);
