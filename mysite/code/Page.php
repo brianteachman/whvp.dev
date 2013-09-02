@@ -40,10 +40,28 @@ class Page_Controller extends ContentController {
 		// Note: you should use SS template require tags inside your templates 
 		// instead of putting Requirements calls here.  However these are 
 		// included so that our older themes still work
-		// Requirements::themedCSS('reset');
-		// Requirements::themedCSS('layout'); 
-		// Requirements::themedCSS('typography'); 
-		// Requirements::themedCSS('form'); 
+		Requirements::themedCSS('bootstrap');
+        // Requirements::css("http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+		Requirements::themedCSS('typography');
+		Requirements::themedCSS('whvp');
+
+        Requirements::javascript("http://code.jquery.com/jquery-1.9.1.js");
+        Requirements::javascript("themes/whvp/js/bootstrap.min.js");
+        // Requirements::javascript("http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js");
+        
+        Requirements::javascript('themes/whvp/js/script.js');
+
+//         Requirements::customScript(<<<JS
+//             $(document).ready(function () { 
+//                 var icon = $("button i");
+//                 if (icon.hasClass('yep')) {
+//                     icon.removeClass('yep');
+//                     icon.addClass('nope');
+//                 }
+//             });
+// JS
+//         );
+
 	}
 
 	/**

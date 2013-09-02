@@ -1,0 +1,56 @@
+html { height: 100%; }
+body { 
+    height: 100%; 
+    margin: 0; padding: 0 ;
+}
+#map-canvas { 
+    height: 100%;
+    position: relative;
+    z-index: 0; 
+}
+#map-body {
+    position: absolute;
+    z-index: 2;
+    font-family: Georgia, serif;
+    }
+    #map-body h1 {
+        padding: 5px 8px 5px;
+        margin: 20px 0 0 25px;
+        background-color: rgb(241, 220, 165);
+        }
+
+
+#panel {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    }
+    .controls {
+        margin: 3px 5px;
+        }
+        .tb-btn {
+            background-color: rgb(241, 220, 165);
+            color: #005580;
+            font-weight: bold;
+            }
+        .tb-bn:hover {
+            /*color: #0088CC;*/
+            }
+
+.nav {
+    margin: 0;
+    }
+
+.faded-beige-bg {
+    background-color: rgb(241, 220, 165);
+    color: #131313;
+    }
+
+.side-note {
+    float:right;
+    font-size: small;
+    font-style: italic;
+    margin-right: 10px;
+    }

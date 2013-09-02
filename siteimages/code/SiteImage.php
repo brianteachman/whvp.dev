@@ -73,4 +73,11 @@ class SiteImage extends DataObject
         return $this->renderWith('SiteInfo');
     }
 
+    /**
+     * Creates the thumnail for the summary fields to use
+     */
+    public function getThumbnail() { 
+        return $this->Image()->CMSThumbnail();
+    }
+
 }

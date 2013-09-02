@@ -1,0 +1,10 @@
+# ---
+# Name: qrcoder
+# Before: '*'
+# After:
+#   - '#rootroutes'
+# ---
+# Director:
+#   rules:
+#     'admin/qr-code//$Data': 'QRCodeAdmin'
+# ---

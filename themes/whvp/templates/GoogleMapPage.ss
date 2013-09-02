@@ -29,13 +29,10 @@
     <![endif]-->
 
 </head>
-<body class="$URLSegment" id="$ClassName">
+<!-- <body class="$URLSegment" id="$ClassName"> -->
+<body class="typography" role="main">
 
-	<div class="container-fluid typography" role="main">
-
-		$Layout
+	$Layout
 		
-	</div>
-
 </body>
 </html>

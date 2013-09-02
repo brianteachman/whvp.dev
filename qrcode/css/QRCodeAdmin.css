@@ -1,0 +1,19 @@
+/*#CustomPageFrame { 
+    position:absolute; 
+    top:0px; left:10px; 
+    right:0px; 
+    bottom:0px; 
+    overflow:auto 
+}
+#CustomPageFrameInner { 
+    padding: 10px
+}*/
+
+.QRCodeAdmin form {
+    margin-left: 15px;
+    width: 600px;
+}
+
+#qr-holder {
+    padding-left: 10px;
+}
