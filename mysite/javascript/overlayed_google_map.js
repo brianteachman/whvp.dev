@@ -3,7 +3,7 @@ var overlay;
 ImageOverlay.prototype = new google.maps.OverlayView();
 
 function initialize() {
-  var myLatLng = new google.maps.LatLng(48.9958066, -122.3434586);
+  var myLatLng = new google.maps.LatLng(48.732581, -122.855380);
   var mapOptions = {
     zoom: 9,
     center: myLatLng,

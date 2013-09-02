@@ -1,6 +1,15 @@
 <div id="map-body">
 
-    <% include Header %>
+    <div class="row">
+        <div class="span5">
+            <% include Header %>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span4 faded-beige-bg">
+            $Content
+        </div>
+    </div>
 
     <div id="panel" class="row-fluid faded-beige-bg" role="contentinfo">
 
