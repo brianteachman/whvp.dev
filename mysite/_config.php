@@ -5,8 +5,8 @@ $project = 'mysite';
 define('PROJECT_DIR', $project);
 
 global $database;
-// $database = 'briantme_whvp2';
-$database = 'whvp';
+$database = 'briantme_whvp2';
+// $database = 'whvp';
 require_once('conf/ConfigureFromEnv.php');
 
 i18n::set_locale('en_US');
