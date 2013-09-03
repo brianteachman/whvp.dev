@@ -5,8 +5,8 @@ $project = 'mysite';
 define('PROJECT_DIR', $project);
 
 global $database;
-$database = 'briantme_whvp2';
-// $database = 'whvp';
+// $database = 'briantme_whvp2';
+$database = 'whvp';
 require_once('conf/ConfigureFromEnv.php');
 
 i18n::set_locale('en_US');
@@ -70,15 +70,13 @@ HtmlEditorConfig::get('cms')->removeButtons('ssflash');
 
 /** ----------------------------------------------------- */
 
-
 // Higher image quality than default.
 GD::set_default_quality(85);
 
 // Dev server credentials, update to clients server for Live server
-// RecaptchaField::$public_api_key = '6LfJVeUSAAAAAHpUka_PlERGrfwWYehZzj71Z9pR';
-// RecaptchaField::$private_api_key = '6LfJVeUSAAAAADmR0c6w5A7qO2FvpTLNH5gEA3Qv';
-// SpamProtectorManager::set_spam_protector('RecaptchaProtector');
-// RecaptchaField::$private_api_key = '6LfJVeUSAAAAADmR0c6w5A7qO2FvpTLNH5gEA3Qv';
+RecaptchaField::$public_api_key = '6LfJVeUSAAAAAHpUka_PlERGrfwWYehZzj71Z9pR';
+RecaptchaField::$private_api_key = '6LfJVeUSAAAAADmR0c6w5A7qO2FvpTLNH5gEA3Qv';
+SpamProtectorManager::set_spam_protector('RecaptchaProtector');
 
 
 // If DataObjects in the sitemap are needed, add extended dataobject
