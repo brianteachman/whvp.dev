@@ -12,6 +12,7 @@ Misc:          hr, em, strong, etc...
 .typography {
     font-family: 'Open Sans', sans-serif;
     color: #404040;
+    /*color: #333333;*/ /* web safe version */
     font-size: 18px;
     /*line-height: 24px;*/
     line-height: 26px;

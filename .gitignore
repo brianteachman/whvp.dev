@@ -2,6 +2,7 @@
 /*
 
 !.gitignore
+!composer.json
 
 !/whvp
 !/themes
