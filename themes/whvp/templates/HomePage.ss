@@ -33,16 +33,11 @@
 </head>
 <body class="$URLSegment" id="$ClassName">
 
-	<div id="layout" class="typography" role="main">
-        
-        <div class="container-fluid">
-            $Layout
-        </div>
+	<div class="container-fluid typography" role="main">
 
-        <% include Footer_Fixed %>
+		$Layout
 		
 	</div>
-    
-    <!-- <small>Site by <a href="http://briant.me">Brian</a> (TeachmanWeb)</small> -->
+
 </body>
 </html>

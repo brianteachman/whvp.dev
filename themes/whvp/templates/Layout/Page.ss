@@ -2,8 +2,8 @@
 
 		<div class="row-fluid">
 
-			<div class="span9">
-				<div class="content">
+			<div class="span9 content">
+				<div class="content-page">
 					$Content
 				</div>
 				$Form
@@ -15,5 +15,3 @@
 			</div>
 			
 		</div>
-
-		<% include Footer %>

@@ -15,11 +15,28 @@ a:focus     color: #0088cc;
 
 */
 
-/* Typography */
-body {
-    font-family: 'Open Sans', sans-serif;
-    /*color: #131313;*/
-    color: #404040;
+
+/* 
+  BACKGROUND COLORS --------- */
+
+.light-blue-bg {
+    background-color: #d3d0c7;
+    }
+.brown-bg {
+    background-color: #8B4513;
+    }
+.dark-grey-bg {
+    background-color: #484848;
+    color: #f7d87f;
+    }
+.beige-bg {
+    background-color: #f7d87f;
+    color: #484848;
+    }
+.faded-beige-bg {
+    background-color: rgb(241, 220, 165);
+    background-color: rgba(241, 220, 165, 0.8);
+    color: #131313;
     }
 
 
@@ -29,13 +46,12 @@ header {
     margin-bottom: 1.5em;
     }
 
-.content {
-    padding: 1em 1em 0;
+#layout {
+    padding-bottom: 20px;
     }
 
-.side-bar {
-    padding: 1em;
-    margin-top: 1em;
+.content {
+    padding: 1em 1em 0;
     }
 
 .btn-back {
@@ -44,6 +60,31 @@ header {
     .btn-back > i {
         /*margin: 15px 8px 15px 15px;*/
         margin: 15px;
+        }
+
+
+/* 
+  ContentPage ---------------- */
+
+.content-page {
+    overflow: hidden;
+    /*border: 1px dashed #404040;*/
+    }
+.content-page p {
+    float: left;
+    /*width: 660px;*/
+    width: 46%;
+    margin-left: 15px;
+    }
+
+.side-bar {
+    padding: 1em;
+    margin-top: 1em;
+    }
+    .side-bar h3 {
+        line-height: 24px;
+        /*padding: 1em;*/
+        /*margin-top: 1em;*/
         }
 
 
@@ -97,17 +138,14 @@ header {
 /* 
   HomePage ----------------- */
 
-/* Colors */
-.brown-bg {
-    background-color: #8B4513;
-    }
-
 #HomePage .content { 
-    font-size: 21px;
+    /*border: 1px solid #999;*/
+    font-size: 22px;
     line-height: 34px;
-    font-style: italic;
-    letter-spacing: 1px;
-    padding: 0 1em;
+    /*font-style: italic;*/
+    font-weight: 300;
+    /*letter-spacing: 1px;*/
+    padding: 0 0 0 3em;
     } /* typography for specific page layout */
 
 .header-banner {
@@ -170,6 +208,9 @@ header {
     }
 }
 @media (max-width: 600px) {
+    #HomePage .content { 
+        padding: 0 1em;
+        }
     .header-text {
         top: 0px;
         right: 5px;
@@ -224,44 +265,54 @@ header {
     width: 100%;
 }
 
+/*
+  Split Conntent Page ---------------- */
+
+.split-content-page > h2 {
+    border-bottom: 1px solid #d3d0c7;
+    margin-bottom: 4px;
+    }
+
+
+/* 
+  Footer ---------------------------- */
+
+footer#fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    }
+
 
 /* 
   Footer Navigation ----------------- */
 
-/* COLORS */
-.light-blue-bg {
-    background-color: #d3d0c7;
-    }
-
-.nav {
-    margin-top: 1em;
-    -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;
-    padding: 0.5em 1em 0.35em;
+nav {
+    /*margin-top: 10px;*/
+    padding: 0.5em 0 0.35em;
     text-align: center;
     font-size: 14px;
     }
-    .title-subtle,
-    .title-slug {
-        font-family: 'Open Sans Extrabold', 'Verdana', sans-serif;
-        text-shadow: 4px 4px 4px #aaa;
+    .site-name {
+        font-size: 18px;
+        font-style: italic;
+        letter-spacing: 1px;
+        padding-right: 5px;
         }
-        .title-subtle {
-            font-size: 18px;
-            text-shadow: 4px 4px 4px #aaa;
-            /*letter-spacing: 1px;*/
-            }
-        .title-slug {
-            font-size: 14px;
-            }
-    .footer-nav {
+    .nav-text {
+        font-size: 14px;
+        font-weight: 600;
+        /*text-transform: uppercase;*/
+        }
+    nav ul {
         display: inline;
         list-style: none;
         margin-left: 0;
         }
-        .footer-nav > li,
-        .footer-nav > li > a {
+        nav ul > li,
+        nav ul > li > a {
             display: inline-block;
             *display: inline;
             zoom: 1;
@@ -272,38 +323,15 @@ header {
         /*font-size: 18px;*/
         }
     .member-link {
-        position: relative;
-        right: 0;
         padding: 5px 8px 3px;
         -webkit-box-shadow: 2px 2px 2px 0 #aaa;
            -moz-box-shadow: 2px 2px 2px 0 #aaa;
                 box-shadow: 2px 2px 2px 0 #aaa;
-        -webkit-border-radius: 15px;
-           -moz-border-radius: 15px;
-                border-radius: 15px; 
         }
 
 
 /* 
-  Footer ---------------------------- */
-
-.bottom {
-    position: relative;
-    }
-
-
-/* 
   ProjectPage --------------------- */
-
-/* COLORS */
-.dark-grey-bg {
-    background-color: #484848;
-    color: #f7d87f;
-    }
-.beige-bg {
-    background-color: #f7d87f;
-    color: #484848;
-    }
 
 #ProjectPage .content {
     /*margin: 1em 0  1em  1em;*/
@@ -323,17 +351,6 @@ header {
 
 /* 
   GeographicScopePage ---------- */
-
-/* COLORS */
-.faded-beige-bg {
-    background-color: rgb(241, 220, 165);
-    background-color: rgba(241, 220, 165, 0.8);
-    color: #131313;
-    }
-
-.geographic-focus {
-    /*margin-top: 700px;*/
-    }
 
 img.bg {
   /* Set rules to fill background */
@@ -355,24 +372,6 @@ img.bg {
     left: 50%;
     margin-left: -585px;   /* 50% */
   }
-}
-
-.geo-focus-btn {
-    position: absolute;
-    top: 0;
-    padding: 0 1em 1em 1em;
-    -webkit-border-bottom-right-radius: 10px;
-     -webkit-border-bottom-left-radius: 10px;
-        -moz-border-radius-bottomright: 10px;
-         -moz-border-radius-bottomleft: 10px;
-            border-bottom-right-radius: 10px;
-             border-bottom-left-radius: 10px;
-}
-.geo-header > h1 {
-    margin-left: 1em;
-}
-.geo-content {
-    padding: 0.5em;
 }
 
 
@@ -444,17 +443,9 @@ img.bg {
 /* 
   UTILITIES --------------- */
 
-form.contact {
-    width: 100%;
-}
-
-/* 
-  UTILITIES --------------- */
-.pad10px {
-    padding: 10px;
-    margin: 15px;
+.add-shadow {
+    text-shadow: 4px 4px 4px #aaa;
     }
-
 
 .qr { display: none; }
 @media print {

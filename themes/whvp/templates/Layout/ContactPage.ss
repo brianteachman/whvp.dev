@@ -19,5 +19,3 @@
 				<% include PageSideBar %>
 			</div>
 		</div>
-
-		<% include Footer %>

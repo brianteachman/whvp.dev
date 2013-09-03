@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
     $("button").click(function () {
+        $("nav").slideToggle("slow");
+        
         var icon = $("button i");
         if ( icon.hasClass('icon-chevron-up') ) {
             icon.removeClass('icon-chevron-up');
@@ -9,7 +11,6 @@ $(document).ready(function() {
             icon.removeClass('icon-chevron-down');
             icon.addClass('icon-chevron-up');
         }
-        $(".nav").slideToggle("slow");
     });
     
 });

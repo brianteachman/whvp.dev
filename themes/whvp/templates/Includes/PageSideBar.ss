@@ -1,19 +1,13 @@
 <aside class="side-bar light-blue-bg">
-	<% if $Menu(1) %>
-		<nav class="secondary">
-			<% with $Level(1) %>
-				<h3>
-					Check out this map!
-				</h3>
-				<a href="#modalView" 
-	        	   role="button" 
-	        	   data-toggle="modal"
-	        	   href="/site-images/image-k">
-					<img src="{$BaseHref}/images/image-k.jpg" alt="See Image k at www.whvp.org/site-images/image-k">
-				</a>
-			<% end_with %>
-		</nav>
-	<% end_if %>
+	<h3>
+		Check out this map!
+	</h3>
+	<a href="#modalView" 
+	   role="button" 
+	   data-toggle="modal"
+	   href="/site-images/image-k">
+		<img src="{$BaseHref}/images/image-k.jpg" alt="See Image k at www.whvp.org/site-images/image-k">
+	</a>
 </aside>
 
 <!-- start Modal -->

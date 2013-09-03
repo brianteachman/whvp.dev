@@ -1,6 +1,6 @@
 <footer class="row-fluid" role="contentinfo">
 
-	<% include FooterNavigation %>
+	<% include NavBar_Fixed %>
 
     <div class="span12 bottom">
     	<div class="site-img">

@@ -30,11 +30,10 @@
 
 		<footer role="contentinfo">
 			<div class="row-fluid">
-				<% include FooterNavigation %>
+				<% include NavBar_Fixed %>
 		    </div>
 			
 			<div class="row-fluid">
-				<% include HomePageFooter %>
+				<% include Footer_HomePage %>
 			</div>
-			<!-- <small>Site by <a href="http://briant.me">Brian</a> (TeachmanWeb)</small> -->
 		</footer>

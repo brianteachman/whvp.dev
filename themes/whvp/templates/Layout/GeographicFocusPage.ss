@@ -1,13 +1,12 @@
-<div id="map-body">
+<div id="map-body" class="">
 
-    <div class="row">
+    <div class="row faded-beige-bg">
         <div class="span5">
             <% include Header %>
-        </div>
-    </div>
-    <div class="row">
-        <div class="span4 faded-beige-bg">
-            $Content
+            <hr>
+            <div id="map-description">
+                $Content
+            </div>
         </div>
     </div>
 
@@ -21,7 +20,7 @@
             <p class="side-note">The image overlayed on this map is for illistrative purposes only.</p>
         </div>
 
-		<% include FooterNavigation %>
+		<% include NavBar_Fixed %>
 
     </div>
 		

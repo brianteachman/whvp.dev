@@ -75,9 +75,6 @@
 
 	    </article>
         $Form
-		
-		<% include FooterNavigation %>
-
 
 		<!-- start Modal -->
 		<div id="modalView" 
