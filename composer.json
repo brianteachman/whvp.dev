@@ -24,6 +24,7 @@
         "silverstripe/widgets": "Additional 'sidebar features', e.g. a list of recent posts and a tagcloud",
         "silverstripe/comments": "Enable user comments on any page type, including blog posts",
         "silverstripe/compass": "Compass Framework integration",
-        "silverstripe/html5": "HTML5 in the CMS HTMLEditor"
+        "silverstripe/html5": "HTML5 in the CMS HTMLEditor",
+        "silverstripe/dms": "Document Management System"
     }
 }
