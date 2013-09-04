@@ -7,16 +7,24 @@
         "name": "Brian Teachman",
         "email": "me@briant.me"
     }],
+
+    "repositories": [
+        {
+        "type": "vcs",
+        "url": "git@github.com:brianteachman/whvp.dev.git"
+        }
+    ],
     
     "require": {
         "php": ">=5.3.2",
         "silverstripe/cms": "3.0.*",
         "silverstripe/framework": "3.0.*",
-        "silverstripe/silverstripe-spamprotection": "dev-master"
+        "brianteachman/whvp.dev": "dev-master"
     },
     "require-dev": {
         "silverstripe/compass": "*",
         "silverstripe/googlesitemaps": "dev-master",
+        "silverstripe/silverstripe-spamprotection": "dev-master",
         "silverstripe/silverstripe-blog": "*",
         "silverstripe/silverstripe-html5": "*"
     },
