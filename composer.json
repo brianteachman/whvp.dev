@@ -1,32 +1,16 @@
 {
-    "name": "brianteachman/whvp.dev",
-    "description": "Installer script for www.whvp.org",
-    "type": "silverstripe-module",
-    "license": "wtfpl",
-    "authors": [{
-        "name": "Brian Teachman",
-        "email": "me@briant.me"
-    }],
-
-    "repositories": [
-        {
-        "type": "vcs",
-        "url": "git@github.com:brianteachman/whvp.dev.git"
-        }
-    ],
-    
     "require": {
         "php": ">=5.3.2",
         "silverstripe/cms": "3.0.*",
         "silverstripe/framework": "3.0.*",
-        "brianteachman/whvp.dev": "dev-master"
+        "silverstripe/spamprotection": "dev-master",
     },
-    "require-dev": {
-        "silverstripe/compass": "*",
-        "silverstripe/googlesitemaps": "dev-master",
-        "silverstripe/silverstripe-spamprotection": "dev-master",
-        "silverstripe/silverstripe-blog": "*",
-        "silverstripe/silverstripe-html5": "*"
-    },
-    "minimum-stability": "dev"
+    "suggest": {
+        "silverstripe/googlesitemaps": "Create an sitemap.xml",
+        "silverstripe/blog": "Come on! You know you want to",
+        "silverstripe/widgets": "Additional 'sidebar features', e.g. a list of recent posts and a tagcloud",
+        "silverstripe/comments": "Enable user comments on any page type, including blog posts",
+        "silverstripe/compass": "Compass Framework integration",
+        "silverstripe/html5": "HTML5 in the CMS HTMLEditor"
+    }
 }
