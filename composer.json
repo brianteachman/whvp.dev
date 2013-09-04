@@ -12,11 +12,11 @@
         "php": ">=5.3.2",
         "silverstripe/cms": "3.0.*",
         "silverstripe/framework": "3.0.*",
-        "silverstripe/googlesitemaps": "1.*",
         "silverstripe/silverstripe-spamprotection": "dev-master"
     },
     "require-dev": {
         "silverstripe/compass": "*",
+        "silverstripe/googlesitemaps": "dev-master",
         "silverstripe/silverstripe-blog": "*",
         "silverstripe/silverstripe-html5": "*"
     },
