@@ -3,7 +3,7 @@
         "php": ">=5.3.2",
         "silverstripe/cms": "3.0.*",
         "silverstripe/framework": "3.0.*",
-        "silverstripe/spamprotection": "dev-master",
+        "silverstripe/spamprotection": "dev-master"
     },
     "suggest": {
         "silverstripe/googlesitemaps": "Create an sitemap.xml",
