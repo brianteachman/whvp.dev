@@ -1,9 +1,13 @@
 #!/bin/bash
 # author: Brian Teachman <me@briant.me>
-# 
-# I assume that composer is installed.
 
-composer.phar install
+if command -v composer 2>/dev/null; then
+    composer install
+else
+    curl -sS https://getcomposer.org/installer | php
+    mv composer.phar composer
+    composer install
+fi
 
 mkdir silverstripe-cache
 chmod 0777 silverstripe-cache
