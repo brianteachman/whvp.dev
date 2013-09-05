@@ -16,7 +16,6 @@ mkdir logs
 chmod 0777 logs
 
 ln -s ./assets/Site-Images ./images
-
 ln -s ./assets/Resources ./resources
 
 echo "We're done here."

@@ -31,7 +31,11 @@ Run install script
     $ chmod 0777 install.sh
     $ ./install.sh
 
+Install Database
 
+    <!-- @todo whvp.sql -->
+
+Overwrite mysite/_config.php with mysite/_config.php.bak
 
 Be sure to configure settings, mysite/_config.php
 
