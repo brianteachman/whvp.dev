@@ -9,11 +9,11 @@ else
     composer install
 fi
 
-mkdir silverstripe-cache
-chmod 0777 silverstripe-cache
-
-mkdir logs
-chmod 0777 logs
+mkdir -p --mode=755 silverstripe-cache
+mkdir -p --mode=755 logs
+mkdir -p --mode=755 assets/Uploads
+mkdir -p --mode=755 assets/Site-Images
+mkdir -p --mode=755 assets/Resources
 
 ln -s ./assets/Site-Images ./images
 ln -s ./assets/Resources ./resources

@@ -17,7 +17,7 @@
     post_max_size = 21M
 
 
-### 2. Install Base Site
+### 2. Install Site
 
 
 Clone site file to root web diectory
@@ -35,11 +35,23 @@ Install Database
 
     <!-- @todo whvp.sql -->
 
-Overwrite mysite/_config.php with mysite/_config.php.bak
-
-Be sure to configure settings, mysite/_config.php
+Since I have not yet finished the schema, we'll rebuild
 
     YOUR_SITE/dev/build?flush=all
+
+Overwrite mysite/_config.php with mysite/_config.php.bak
+    
+    $ mv mysite/_config.php.bak mysite/_config.php
+
+Rebuild the database again
+
+    YOUR_SITE/dev/build?flush=all
+
+
+### 3. Configure Site
+
+1. Upload Site Images & Resources into respective Uploads directory, located at `http://yoursite/admin/assets`
+
 
 
 <http://doc.silverstripe.org/framework/en/installation/>
