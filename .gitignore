@@ -2,6 +2,10 @@
 /*
 
 !.gitignore
+!README.md
+!index.php
+!install.php
+!install.sh
 !composer.json
 
 !/whvp
