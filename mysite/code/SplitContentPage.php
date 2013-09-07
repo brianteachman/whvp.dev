@@ -21,9 +21,11 @@ class SplitContentPage extends ContentPage {
 
         // $fields->removeFieldFromTab('Root', 'Dependent');
         
-        $fields->addFieldToTab('Root.Main', new TextField('SubHeader1', 'Heading 1'), 'Content');
-        $fields->addFieldToTab('Root.Main', new TextField('SubHeader2', 'Heading 2'), 'Metadata');
-        $fields->addFieldToTab('Root.Main', new HtmlEditorField('Content2'), 'Metadata');
+        $fields->addFieldToTab('Root.Main', new TextField('SubHeader1', 'Top Header'), 'Content');
+        $fields->addFieldToTab('Root.Main', new TextField('SubHeader2', 'Bottom Header'), 'Metadata');
+        $fields->removeByName('Content'); 
+        $fields->addFieldToTab("Root.Main", new HTMLEditorField("Content", 'Top Content'), 'SubHeader2');
+        $fields->addFieldToTab('Root.Main', new HtmlEditorField('Content2', 'Bottom Content'), 'Metadata');
 
         return $fields;
     }
