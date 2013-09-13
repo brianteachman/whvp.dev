@@ -1,49 +1,42 @@
-		<div class="row-fluid">
+		<div class="row">
 
-			<div class="span12 image-info-header">
-
-				<%-- include SiteImagesHeader --%>
-
-			</div>
+			<% include SiteImagesHeader %>
 
 		</div>
 
-		<div class="row-fluid">
-			<div class="span12">
+		<div class="row content">
+			<!-- <div class="col-md-12"> -->
 				$Content
-			</div>
+			<!-- </div> -->
 		</div>
 
-		<div class="row-fluid">
-			<div class="span12">
+		<section class="row site-images-holder">
 
-				<section>
+			<% loop SiteImages %>
+			<div class="col-md-6">
+	        	<div class="img-box light-blue-bg">
+	        		
+		            <div class="image-header">
 
-					<% loop SiteImages %>
-		        	<div class="img-box light-blue-bg">
-		        		<a href="{$BaseHref}images/{$Image.Name}">
-			            	<!-- <img data-original="images/{$Image.Name}" 
-			            		 src="{$BaseHref}images/{$Image.Name}" 
-			            		 alt="$Name" 
-			            		 width="100" 
-			            		 height="100" /> -->
+						<a href="{$BaseHref}images/{$Image.Name}">
 			            	$Image.SetRatioSize(100,100)
 			            </a>
-		        		
-			            <div class="image-info">
-			            	<h2>$Name</h2>
+						<h2>$Name</h2>
 
-			                <% if $Description %>
-							$Description
-							<% end_if %>
-			            </div>
-		        	</div>
-			        <% end_loop %>
+					</div>
 
-				</section>
+					<div class="image-description">
+		                <% if $Description %>
+						$Description.LimitWordCountXML
+						<% end_if %>
+					</div>
+		            
+	        	</div> <!-- end: .img-box -->
+	        </div>
+	        <% end_loop %>
 
-			</div>
 			$Form
-		</div>
+
+		</section>
 
 		<% include Footer_Fixed %>

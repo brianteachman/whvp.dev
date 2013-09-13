@@ -1,0 +1,36 @@
+/* 
+  Site Images  ---------- */
+
+.site-images-holder {
+    overflow: hidden;
+    margin-bottom: 21px;
+    }
+    .img-box {
+        float: left;
+        height: 250px;
+        padding: 14px;
+        margin-bottom: 14px;
+        }
+        .image-header  {
+            position: relative;
+            height: 100px;
+            }
+            .image-header > img {
+                position: absolute; 
+                bottom: 0; left: 0;
+                }
+            .image-header > h2 {
+                position: absolute; 
+                bottom: 0; left: 110px;
+                width: 80%;
+
+                border-bottom: 3px solid rgb(0, 0, 0);
+                border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+                }
+        .image-description {
+            height: 4em;
+            }
+
+@media (max-width: 600px) {
+
+}

@@ -16,10 +16,11 @@
         "silverstripe/cms": "3.0.*",
         "silverstripe/framework": "3.0.*",
         "silverstripe/spamprotection": "@dev",
-        "silverstripe/blog": "@dev"
+        "silverstripe/recaptcha": "@dev"
     },
 
     "suggest": {
+        "silverstripe/blog": "@dev",
         "silverstripe/googlesitemaps": "Create an sitemap.xml",
         "silverstripe/widgets": "Additional 'sidebar features', e.g. a list of recent posts and a tagcloud",
         "silverstripe/comments": "Enable user comments on any page type, including blog posts",

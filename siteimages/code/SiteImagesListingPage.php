@@ -41,10 +41,10 @@ class SiteImagesListingPage_Controller extends Page_Controller
         'view/$ID!' => 'view'
     );
 
-    public function view($request) {
-        // $image = DataObject::get_by_id('SiteImage', $request->param('ID'));
-        $image = SiteImage::get()->byID($request->param('ID'));
-        return $image->renderWith('SiteImagesListingPage_view');
+    public function init() {
+        parent::init();
+        Requirements::css('siteimages/css/siteimages.css');
+        // Requirements::javascript('siteimages/js/siteimages.js');
     }
 
     public function getSiteImages() {
