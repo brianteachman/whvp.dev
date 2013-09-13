@@ -28,6 +28,7 @@ Clone site file to root web diectory
 Run install script
 
     $ cd whvp
+    $ chmod 0777 update.sh
     $ chmod 0777 install.sh
     $ ./install.sh
 

@@ -2,11 +2,11 @@
 # author: Brian Teachman <me@briant.me>
 
 if command -v composer 2>/dev/null; then
-    composer install
+    php -d allow_url_fopen=On composer install
 else
-    curl -sS https://getcomposer.org/installer | php
+    curl -sS https://getcomposer.org/installer | php -d allow_url_fopen=On
     mv composer.phar composer
-    composer install
+    php -d allow_url_fopen=On composer install
 fi
 
 mkdir -p --mode=777 silverstripe-cache
