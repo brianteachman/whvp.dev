@@ -11,11 +11,9 @@
     <body>
         <h1>You have a message from www.whvp.org<h1>
         <ul>
-            <% if FirstName %><li>First name: $FirstName</li><% end_if %>
-            <% if Surname %><li>Surname: $Surname</li><% end_if %>
-            <% if Email %><li>Email address: $Email</li><% end_if %>
-            <% if Phone %><li>Phone number: $Phone</li><% end_if %>
-            <% if Comment %><li>Message: <br />$Comment</li><% end_if %>
+            <% if FirstName %><li>From: $Name</li><% end_if %>
+            <% if Email %><li>@: $Email</li><% end_if %>
+            <% if Comment %><li>Message: <br />$Message</li><% end_if %>
         </ul>
         <p>You can simply reply to this message.</p>
     </body>
