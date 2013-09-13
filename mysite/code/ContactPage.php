@@ -34,9 +34,9 @@ class ContactPage_Controller extends Emailer_Controller {
         $form = new ContactForm($this, 'ContactForm');
 
         // enable RecaptchaProtection
-        // if(class_exists('SpamProtectorManager')) {
-        //     SpamProtectorManager::update_form($form);
-        // }
+        if(class_exists('SpamProtectorManager')) {
+            SpamProtectorManager::update_form($form);
+        }
 
         return $form;
     }

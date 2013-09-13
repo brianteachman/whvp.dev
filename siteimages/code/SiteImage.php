@@ -28,13 +28,11 @@ class SiteImage extends DataObject
     {
         $fields = parent::getCMSFields();
 
-        // $urlsegment = new SiteTreeURLSegmentField("URLSegment", $this->fieldLabel('URLSegment'));
-        // $urlsegment->setURLPrefix(Director::absoluteBaseURL() . 'site-images/show/');
-        // $fields->addFieldToTab('Root.Main', $urlsegment, 'Description');
+        $fields->addFieldToTab('Root.Upload', new DateField('Created'));
 
         $site_images = new TreeDropdownField(
             'ImageID', 
-            'Select File', 
+            'Select Image', 
             'Image'
         );
         $site_images->setTreeBaseID(3);
@@ -44,17 +42,6 @@ class SiteImage extends DataObject
         // $fields->addFieldToTab('Root.Main', new LiteralField('', 
         //     '<p>' . $slug . '</p>'
         // ));
-
-        // Add to Uploads Tab
-        // $uploadField = new UploadField(
-        //     $name = 'SiteImage',
-        //     $title = 'If the image is not already in the Site Images folder, upload it here.'
-        // );
-        // $uploadField->setFolderName('Site-Images');
-        // $uploadField->setConfig('allowedMaxFileNumber', 1);
-        // $uploadField->getValidator()
-        //             ->setAllowedExtensions(array('doc', 'pdf', 'jpg', 'jpeg', 'png', 'gif', 'tif'));
-        // $fields->addFieldToTab('Root.Upload', $uploadField);
         
         return $fields;
     }

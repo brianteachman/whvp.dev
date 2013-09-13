@@ -10,7 +10,8 @@ class ContactForm extends Form
             EmailField::create('Email')->addExtraClass('input-lg'),
             TextareaField::create('Message')->setRows(6)
                                             ->setColumns(60)
-                                            ->addExtraClass('input-lg')
+                                            ->addExtraClass('input-lg'),
+            RecaptchaField::create('ReCaptcha')
         );
         $actions = new FieldList(FormAction::create("sendemail")->setTitle("SEND")->addExtraClass('input-lg'));
         $validator = new RequiredFields(

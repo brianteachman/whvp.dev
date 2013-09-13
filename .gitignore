@@ -2,6 +2,7 @@
 /*
 
 !.gitignore
+!*.htaccess
 !README.md
 !index.php
 !install.php

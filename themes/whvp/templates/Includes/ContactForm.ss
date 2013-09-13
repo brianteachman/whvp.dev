@@ -8,30 +8,40 @@
 
     <fieldset>
         <div class="form-group">
-            <label for="{$FormName}_Name" class="col-lg-2 control-label">Name</label>
+            <label for="{$FormName}_Name" class="col-lg-2 control-label">Name:</label>
             <div class="col-lg-10">
                 $Fields.dataFieldByName(Name)
             </div>
         </div>
 
         <div class="form-group">
-            <label for="{$FormName}_Email" class="col-lg-2 control-label">Email</label>
+            <label for="{$FormName}_Email" class="col-lg-2 control-label">Email:</label>
             <div class="col-lg-10">
                 $Fields.dataFieldByName(Email)
             </div>
         </div>
 
         <div class="form-group">
-            <label for="{$FormName}_Message" class="col-lg-2 control-label">Message</label>
+            <label for="{$FormName}_Message" class="col-lg-2 control-label">Message:</label>
             <div class="col-lg-10">
                 $Fields.dataFieldByName(Message)
             </div>
         </div>
     </fieldset>
+
+    <div class="form-group">
+        <label for="{$FormName}_ReCaptcha" class="col-lg-2 control-label">You Human?</label>
+        <div class="col-lg-5" title="CAPTCHA: Completely Automated Public Turing test to tell Computers and Humans Apart">
+            $Fields.dataFieldByName(ReCaptcha)
+        </div>
+        <div class="col-md-5">
+            <% if $Actions %>
+            <% loop $Actions %>$Field<% end_loop %>
+            <% end_if %>
+        </div>
+    </div>
      
     $Fields.dataFieldByName(SecurityID)
      
-    <% if $Actions %>
-    <% loop $Actions %>$Field<% end_loop %>
-    <% end_if %>
+    
 </form>
