@@ -37,7 +37,7 @@ class SiteImage extends DataObject
             'Select File', 
             'Image'
         );
-        $site_images->setTreeBaseID(1);
+        $site_images->setTreeBaseID(3);
         $fields->addFieldToTab('Root.Main', $site_images, 'Image');
 
         // $slug = $this->slug($fields->fieldByName('Image.Name'));
