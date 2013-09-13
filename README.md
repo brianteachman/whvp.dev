@@ -11,7 +11,7 @@
     asp_tags = Off
     safe_mode = Off
     magic_quotes_gpc = Off
-    memory_limit = 48M
+    memory_limit = 128M
     date.timezone = "America/Vancouver" 
     upload_max_filesize = 20M
     post_max_size = 21M
