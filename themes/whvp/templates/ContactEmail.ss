@@ -9,11 +9,11 @@
         </style>
     </head>
     <body>
-        <h1>You have a message from www.whvp.org<h1>
+        <h1>You have a message from www.whvp.org</h1>
         <ul>
-            <% if FirstName %><li>From: $Name</li><% end_if %>
+            <% if Name %><li>From: $Name</li><% end_if %>
             <% if Email %><li>@: $Email</li><% end_if %>
-            <% if Comment %><li>Message: <br />$Message</li><% end_if %>
+            <% if Message %><li>Message: <br />$Message</li><% end_if %>
         </ul>
         <p>You can simply reply to this message.</p>
     </body>
