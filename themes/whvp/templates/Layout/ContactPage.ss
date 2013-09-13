@@ -1,21 +1,18 @@
 		<% include Header %>
 
-		<div class="row-fluid">
+		<div class="row">
 
-			<div class="span9">
+			<div class="col-md-12 content">
+			<% if IsSuccess && SubmitText %>
 
-				<div class="content">
-					<% if IsSuccess && SubmitText %>
-			            $SubmitText
-			        <% else %>
-			        	<span class="lead">$Content</span>
-			            $ContactForm
-			        <% end_if %>
-				</div>
+            $SubmitText
 
+	        <% else %>
+
+        	$Content
+            $ContactForm
+            
+	        <% end_if %>
 			</div>
 
-			<div class="span3">
-				<% include PageSideBar %>
-			</div>
 		</div>

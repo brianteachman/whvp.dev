@@ -4,12 +4,12 @@ $(document).ready(function() {
         $("nav").slideToggle("slow");
         
         var icon = $("button i");
-        if ( icon.hasClass('icon-chevron-up') ) {
-            icon.removeClass('icon-chevron-up');
-            icon.addClass('icon-chevron-down');
+        if ( icon.hasClass('glyphicon-chevron-up') ) {
+            icon.removeClass('glyphicon-chevron-up');
+            icon.addClass('glyphicon-chevron-down');
         } else {
-            icon.removeClass('icon-chevron-down');
-            icon.addClass('icon-chevron-up');
+            icon.removeClass('glyphicon-chevron-down');
+            icon.addClass('glyphicon-chevron-up');
         }
     });
     

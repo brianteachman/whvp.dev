@@ -1,45 +1,37 @@
 <!-- <form $FormAttributes> -->
-<form class="form-horizontal contact" action="/contact/Form" method="post">
+<form $FormAttributes class="form-horizontal contact" role="form">
     <% if $Message %>
         <p id="{$FormName}_error" class="message $MessageType">$Message</p>
     <% else %>
         <p id="{$FormName}_error" class="message $MessageType" style="display: none"></p>
     <% end_if %>
-     
+
     <fieldset>
-        <div class="field">
-            <label class="" for="{$FormName}_FirstName">First Name</label>
-            $Fields.dataFieldByName(FirstName)
+        <div class="form-group">
+            <label for="{$FormName}_Name" class="col-lg-2 control-label">Name</label>
+            <div class="col-lg-10">
+                $Fields.dataFieldByName(Name)
+            </div>
         </div>
 
-        <div class="field">
-            <label class="" for="{$FormName}_Surname">Surname</label>
-            $Fields.dataFieldByName(Surname)
+        <div class="form-group">
+            <label for="{$FormName}_Email" class="col-lg-2 control-label">Email</label>
+            <div class="col-lg-10">
+                $Fields.dataFieldByName(Email)
+            </div>
         </div>
 
-        <div class="field">
-            <label class="" for="{$FormName}_Email">Email</label>
-            $Fields.dataFieldByName(Email)
+        <div class="form-group">
+            <label for="{$FormName}_Message" class="col-lg-2 control-label">Message</label>
+            <div class="col-lg-10">
+                $Fields.dataFieldByName(Message)
+            </div>
         </div>
-
-        <div class="field">
-            <label class="" for="{$FormName}_Message">Message</label>
-            $Fields.dataFieldByName(Comment)
-        </div>
-
-        <div class="field">
-            <label class="" for="{$FormName}_RecaptchaProtector">Recaptcha</label>
-            $Fields.dataFieldByName(Captcha)
-        </div>
-         
-        $Fields.dataFieldByName(SecurityID)
     </fieldset>
      
+    $Fields.dataFieldByName(SecurityID)
+     
     <% if $Actions %>
-    <div class="Actions">
-        <div class="field">
-            <% loop $Actions %>$Field<% end_loop %>
-        </div>
-    </div>
+    <% loop $Actions %>$Field<% end_loop %>
     <% end_if %>
 </form>

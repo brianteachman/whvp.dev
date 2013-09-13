@@ -1,39 +1,56 @@
-		<header class="row-fluid" role="banner">
-			<div class="span12 header-banner">
+		<!-- Start: HomePage -->
+        <header class="row">
+            <div class="col-md-12 header-banner" role="banner">
 
-				<img src="{$BaseHref}images/header-banner.jpg" alt="Homepage image">
-				<a href="{$BaseHref}site-images#image-a"  
-				   class="badge info-btn pos-top-left" 
-				   title="See Image A on the Site Image Info page">A</a>
-			    <a href="{$BaseHref}site-images#image-b"  
-				   class="badge info-btn pos-bottom-right" 
-				   title="See Image B on the Site Image Info page">B</a>
+                <img class="banner-top" 
+                     src="{$ThemeDir}/graphics/header.jpg" alt="Image A: Homepage banner">
+                <img class="banner-bottom" 
+                     src="{$BaseHref}images/image-b.png" 
+                     alt="Image B: Homepage banner">
 
-				<span class="header-text">
-					<h1 class="text-right">$SiteConfig.Title</h1>
-					<h2 class="text-right">$SiteConfig.Tagline</h2>
-				</span>
+                <a href="{$BaseHref}site-images#image-a"  
+                   class="badge info-btn pos-top-left" 
+                   title="See Image A on the Site Image Info page">A</a>
+                <a href="{$BaseHref}site-images#image-b"  
+                   class="badge info-btn pos-bottom-right" 
+                   title="See Image B on the Site Image Info page">B</a>
 
-			</div>
-		</header>
+                <div class="header-text">
+                    <h1>$SiteConfig.Title</h1>
+                    <h2>$SiteConfig.Tagline</h2>
+                </div>
 
-		<article class="row-fluid homepage-article">
-			<div class="span7 content">
-				$Content
+            </div>
+        </header>
+
+        <article id="homepage-article" class="row">
+
+            <!-- Start: Body Content -->
+            <div class="col-md-7 content">
+
+                $Content
 				$Form
-			</div>
+                
+            </div>
+            <!-- Start: Body Content -->
 
-			<div class="span5 search-box">
-				$SearchForm
-			</div>
-		</article>
 
-		<footer role="contentinfo">
-			<div class="row-fluid">
-				<% include NavBar_Fixed %>
-		    </div>
-			
-			<div class="row-fluid">
-				<% include Footer_HomePage %>
-			</div>
-		</footer>
+            <!-- Start: Search Box -->
+            <div class="col-md-5">
+
+                <div id="search-box">
+                    
+                    $SearchForm
+
+                    <div class="search-tip">
+                        <small>Search by: Topic, <span class="acronym">whvp</span> image #, project name</small>
+                    </div>
+
+                    <p id="SearchForm_SearchForm_error" class="message " style="display: none"></p>
+
+                </div>
+
+            </div>
+            <!-- End: Search Box -->
+
+        </article>

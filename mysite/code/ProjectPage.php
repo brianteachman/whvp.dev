@@ -1,13 +1,13 @@
 <?php
-define('PROJECT_ICON_PATH', 'mysite/icons/project-file.gif');
+define('PROJECT_ICON_PATH', 'mysite/icons/project-file.png');
 /**
  * 
  */
-class ProjectPage extends Page {
+class ProjectPage extends ContentPage {
 
     public static $icon = PROJECT_ICON_PATH;
 
-    public static $db = array(
+    static $db = array(
         'Shortcode' => 'Varchar(10)',
     );
 
@@ -68,5 +68,5 @@ class ProjectPage extends Page {
     }
 }
 
-class ProjectPage_Controller extends Page_Controller {
+class ProjectPage_Controller extends ContentPage_Controller {
 }

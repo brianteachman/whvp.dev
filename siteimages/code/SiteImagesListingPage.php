@@ -1,5 +1,5 @@
 <?php
-define('SITEIMAGE_ICON_PATH', 'mysite/icons/imageholder-file.gif');
+define('SITEIMAGE_ICON_PATH', 'mysite/icons/image-file.png');
 /**
  * 
  */

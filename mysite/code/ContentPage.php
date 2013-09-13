@@ -1,18 +1,18 @@
 <?php
-define('PAGE_ICON_PATH', 'mysite/icons/content-file.gif');
+define('CONTENT_ICON_PATH', 'mysite/icons/content-file.svg');
 /**
  * Extended Site Page Model
  */
 class ContentPage extends Page {
 
-	public static $hide_ancestor = 'Page';
+	static $hide_ancestor = 'Page';
 
-	public static $icon = PAGE_ICON_PATH;
+	static $icon = CONTENT_ICON_PATH;
 
-	public static $db = array(
+	static $db = array(
 	);
 
-	public static $has_one = array(
+	static $has_one = array(
 	);
 }
 class ContentPage_Controller extends Page_Controller {

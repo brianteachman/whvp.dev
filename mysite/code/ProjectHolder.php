@@ -1,10 +1,12 @@
 <?php
-define('PROJECTHOLDER_ICON_PATH', 'mysite/icons/projectholder-file.gif');
+define('PROJECTHOLDER_ICON_PATH', 'mysite/icons/data-file.png');
 /**
  * 
  */
 class ProjectHolder extends SplitContentPage {
-
+    // static $hide_ancestor = 'SplitContentPage';
+    
+    static $icon = PROJECTHOLDER_ICON_PATH;
 }
 
 class ProjectHolder_Controller extends SplitContentPage_Controller {

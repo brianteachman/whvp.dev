@@ -18,7 +18,7 @@
 
             <% if $CurrentMember %>
             <a href="/admin" class="btn member-link" target="_blank">
-                <i class="icon-wrench"></i>
+                <i class="glyphicon glyphicon-cog"></i>
             </a>
             <% end_if %>
 

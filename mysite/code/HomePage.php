@@ -1,5 +1,5 @@
 <?php
-define('HOME_ICON_PATH', 'mysite/icons/intro-file.gif');
+define('HOME_ICON_PATH', 'mysite/icons/intro-file.png');
 /**
 * 
 */
@@ -12,7 +12,8 @@ class HomePage_Controller extends Page_Controller
 {
     public function init() {
         parent::init();
-        Requirements::javascript('themes/whvp/js/home-page.js');
+        Requirements::themedCSS('homepage');
+        Requirements::javascript('themes/whvp/js/homepage.js');
     }
 
     // public function getHomepageThumbs() {

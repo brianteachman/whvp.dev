@@ -1,17 +1,16 @@
 		<% include Header %>
 
-		<div class="row-fluid">
+		<div class="row">
 
-			<div class="span9 content">
+			<div class="col-md-12 content">
+
 				<div class="content-page">
 					$Content
 				</div>
+
 				$Form
 				$PageComments
-			</div>
 
-			<div class="span3">
-				<% include PageSideBar %>
 			</div>
 			
 		</div>

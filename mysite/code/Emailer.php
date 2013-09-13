@@ -1,5 +1,5 @@
 <?php
-define('EMAILER_ICON_PATH', 'mysite/icons/mail-file.gif');
+define('EMAILER_ICON_PATH', 'mysite/icons/mail-file.png');
 /**
  * Base page for all contact forms.
  *
@@ -54,8 +54,8 @@ abstract class Emailer_Controller extends Page_Controller {
     
     public function init() {
         parent::init();
-        Requirements::javascript(PROJECT_DIR . '/thirdparty/validate/jquery.validate.pack.js');
-        define('SPAN', '<span class="required">*</span');
+        // Requirements::javascript(PROJECT_DIR . '/thirdparty/validate/jquery.validate.pack.js');
+        // define('SPAN', '<span class="required">*</span');
     }
     
     /**
@@ -70,7 +70,7 @@ abstract class Emailer_Controller extends Page_Controller {
         if (!empty($this->Mailto)) {
             $to = $this->Mailto;
         } else {
-            $to = EMAIL;
+            $to = ADMIN_EMAIL;
         }
         $from = $data['Email'];
         $subject = $this->subject;

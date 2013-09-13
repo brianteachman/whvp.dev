@@ -4,44 +4,45 @@
 <head>
   	<% base_tag %>
     <meta charset="utf-8">
+
 	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="">
     <meta name="author" content="Brian Teachman">
 	<%-- $MetaTags(false) --%>
 
-    <!-- start: Facebook Open Graph -->
+    <!-- start: Open Graph -->
     <meta property="og:title" content="<% if $MetaTitle %>$MetaTitle:<% else %>$Title:<% end_if %> $SiteConfig.Title">
     <meta property="og:description" content="{$MetaDescription}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{$AbsoluteLink}">
     <meta property="og:image" content="{$BaseHref}images/image-m.jpg">
-    <!-- end: Facebook Open Graph -->
+    <!-- end: Open Graph -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 	<link href="/{$ThemeDir}/img/favicon.ico" rel="icon" type="image/x-icon">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:700,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <%-- <script src="/{$ThemeDir}/js/html5shiv.js"></script> --%>
+    <script src="/{$ThemeDir}/js/html5shiv.js"></script>
+    <script src="/{$ThemeDir}/js/respond.min.js"></script>
     <![endif]-->
 
+<link href="/{$ThemeDir}/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 </head>
-<body class="$URLSegment" id="$ClassName">
+<body class="$URLSegment typography faded-beige-bg" id="$ClassName">
 
-	<div id="layout" class="typography" role="main">
+	<div class="container" role="main">
         
-        <div class="container-fluid">
-            $Layout
-        </div>
-
-        <% include Footer_Fixed %>
+        $Layout
 		
 	</div>
+
+    <% include Footer_Fixed %>
     
     <!-- <small>Site by <a href="http://briant.me">Brian</a> (TeachmanWeb)</small> -->
 </body>

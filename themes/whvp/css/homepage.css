@@ -1,0 +1,74 @@
+/* 
+  HomePage ----------------- */
+
+.header-banner {
+    position: relative;
+    width: 100%; /* for IE 6 */
+    height: 250px;
+    }
+    .header-banner > img {
+        width: 100%;
+        position: absolute;
+        }
+        .banner-top { z-index: 1; }
+        .banner-bottom {
+            top: 90px;
+            z-index: 2; 
+            }
+    .header-banner > .pos-bottom-right {
+        position: absolute;
+        bottom: -25px;
+        right: 20px;
+        }
+    .header-text {
+        position: absolute; 
+        top: 15px;
+        right: 70px;
+        z-index: 3;
+        text-align: right;
+        }
+
+#homepage-article > .content {
+    /*padding: 0 2em;*/
+    /*position: relative;
+    top: -30px;*/
+    /* Typography */
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 300;
+    }
+
+#homepage-footer {
+    overflow: hidden;
+    position:relative;
+    padding: 15px 0;
+    }
+    #homepage-footer div {
+        /*margin: 0 0 0 10px;*/
+        }
+
+@media (max-width: 920px) {
+    .homepage-article > .content {
+        padding: 0.5em;
+        position: relative;
+        top: 0;
+        }
+    .header-text {
+        right: 60px;
+        }
+    .header-text h1,
+    .header-text h2 {
+        font-size: 110%;
+        line-height: 99%;
+        }
+}
+@media (max-width: 600px) {
+    #HomePage .content { 
+        /*padding: 0 1em;*/
+        }
+    .header-text {
+        /*top: 0px;
+        right: 5px;
+        font-size: 100%;*/
+        }
+}

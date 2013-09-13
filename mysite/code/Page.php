@@ -35,21 +35,21 @@ class Page_Controller extends ContentController {
 	);
 
 	public function init() {
+        $themes_dir = $this->ThemeDir();
+
 		parent::init();
 
 		// Note: you should use SS template require tags inside your templates 
 		// instead of putting Requirements calls here.  However these are 
 		// included so that our older themes still work
-		Requirements::themedCSS('bootstrap');
-        // Requirements::css("http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+		Requirements::themedCSS('bootstrap.min');
 		Requirements::themedCSS('typography');
 		Requirements::themedCSS('whvp');
 
         Requirements::javascript("http://code.jquery.com/jquery-1.9.1.js");
-        Requirements::javascript("themes/whvp/js/bootstrap.min.js");
-        // Requirements::javascript("http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js");
+        Requirements::javascript($themes_dir."/js/bootstrap.min.js");
         
-        Requirements::javascript('themes/whvp/js/script.js');
+        Requirements::javascript($this->ThemeDir().'/js/script.js');
 
 //         Requirements::customScript(<<<JS
 //             $(document).ready(function () { 

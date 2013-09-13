@@ -18,7 +18,8 @@ function initialize() {
   var bounds = new google.maps.LatLngBounds(swBound, neBound);
 
   // Photograph courtesy of the U.S. Geological Survey
-  var srcImage = 'images/image-i.jpg';
+  // var srcImage = 'images/image-i.jpg';
+  var srcImage = 'themes/whvp/graphics/map-overlay.png';
   overlay = new ImageOverlay(bounds, srcImage, map);
 }
 
