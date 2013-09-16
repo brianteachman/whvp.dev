@@ -2,9 +2,9 @@
 
 	    <article class="project-page">
 
-	    	<div class="row-fluid dark-grey-bg pad-1">
+	    	<div class="row dark-grey-bg pad-1">
 
-	    		<div class="span12">
+	    		<div class="col-md-12">
 
 	    			<!-- <div class="row-fluid">
 		        		<div class="span12">
@@ -16,15 +16,15 @@
 		        		</div>
 		        	</div> -->
 
-			        <div class="row-fluid content">
+			        <div class="row content">
 
-			        	<div class="span5">
+			        	<div class="col-md-5">
 			        		<% if $Content %>
 			        		<div class="pad10px beige-bg">$Content</div>
 			        		<% end_if %>
 			        	</div>
 
-				        <div class="span4">
+				        <div class="col-md-4">
 				        	<h3 class="resource-header">Articles &amp; Presentations</h3>
 				            <ul class="resource-list light-blue-bg">
 				        		<% loop $Resources %>
@@ -37,7 +37,7 @@
 				            </ul>
 				        </div>
 
-				        <div class="span3">
+				        <div class="col-md-3">
 				        	<h3 class="resource-header">Maps &amp; Images</h3>
 					        <ul class="resource-list light-blue-bg">
 					        	<% loop $Resources %>
@@ -54,15 +54,15 @@
 		        </div>
 
 	        </div>
-	        <div class="row-fluid beige-bg pad-1">
+	        <div class="row beige-bg pad-1">
 	        	
-	        	<div class="row-fluid">
-	        		<div class="span12">
+	        	<div class="row">
+	        		<div class="col-md-12">
 	        			<h1 class="brand">$Title</h1>
 	        		</div>
 	        	</div>
 
-	        	<div class="span12">
+	        	<div class="col-md-12">
 		        	<a href="#modalView" 
 		        	   role="button" 
 		        	   data-toggle="modal">
