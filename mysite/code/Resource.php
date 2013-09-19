@@ -56,7 +56,7 @@ class Resource extends DataObject
             'Associated Project',  // Field title
             'ProjectHolder'        // object-type to list in the tree
         );
-        $projects->setTreeBaseID(9);
+        // $projects->setTreeBaseID(9);
         $fields->addFieldToTab('Root.Main', $projects);
 
         return $fields;

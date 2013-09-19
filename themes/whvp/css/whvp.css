@@ -42,6 +42,9 @@ a:focus     color: #0088cc;
 
 /* 
   Layout ------------------- */
+
+html {overflow-y: scroll;}
+
 header {
     /*margin-bottom: 1.5em;*/
     }

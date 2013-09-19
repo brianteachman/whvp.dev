@@ -26,8 +26,8 @@
 
 				        <div class="col-md-4">
 				        	<h3 class="resource-header">Articles &amp; Presentations</h3>
-					        <div class="resource-list-box">
-					        	<ul class="resource-list light-blue-bg">
+					        <div class="resource-list-box light-blue-bg">
+					        	<ul class="resource-list">
 					        		<% loop $Resources %>
 					        		<% if $Type != 'Map' %>
 									<li>
@@ -41,8 +41,8 @@
 
 				        <div class="col-md-3">
 				        	<h3 class="resource-header">Maps &amp; Images</h3>
-				        	<div class="resource-list-box">
-				        		<ul class="resource-list light-blue-bg">
+				        	<div class="resource-list-box light-blue-bg">
+				        		<ul class="resource-list">
 						        	<% loop $Resources %>
 					        		<% if $Type == 'Map' %>
 									<li>
@@ -62,7 +62,7 @@
 
 	        	<div class="row">
 
-	        		<div class="col-md-12">
+	        		<div class="col-md-12 project-title">
 	        			<h1 class="brand">$Title</h1>
 	        		</div>
 
