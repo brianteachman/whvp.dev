@@ -54,22 +54,26 @@
 		        </div>
 
 	        </div>
-	        <div class="row beige-bg pad-1">
-	        	
+	        <div class="row beige-bg">
+
 	        	<div class="row">
+
 	        		<div class="col-md-12">
 	        			<h1 class="brand">$Title</h1>
 	        		</div>
+
 	        	</div>
 
-	        	<div class="col-md-12">
-		        	<a href="#modalView" 
-		        	   role="button" 
-		        	   data-toggle="modal">
-		        		<img src="{$BaseHref}images/wfd-image.jpg" alt="...">
-		        	</a>
-					<!-- see the modal done below. -->
-	        	</div>
+		        <div class="row">
+		        	<div class="col-md-12">
+			        	<!-- <a href="#modalView" 
+			        	   role="button" 
+			        	   data-toggle="modal"> -->
+			        		<img src="{$BaseHref}images/wfd-image.jpg" alt="...">
+			        	<!-- </a> -->
+						<!-- see the modal done below. -->
+		        	</div>
+		        </div>
 
 	        </div>
 
