@@ -26,28 +26,32 @@
 
 				        <div class="col-md-4">
 				        	<h3 class="resource-header">Articles &amp; Presentations</h3>
-				            <ul class="resource-list light-blue-bg">
-				        		<% loop $Resources %>
-				        		<% if $Type != 'Map' %>
-								<li>
-									<a href="{$BaseHref}resources/{$File.Name}">$Name</a>
-								</li>
-								<% end_if %>
-								<% end_loop %>
-				            </ul>
+					        <div class="resource-list-box">
+					        	<ul class="resource-list light-blue-bg">
+					        		<% loop $Resources %>
+					        		<% if $Type != 'Map' %>
+									<li>
+										<a href="{$BaseHref}resources/{$File.Name}">$Name</a>
+									</li>
+									<% end_if %>
+									<% end_loop %>
+					            </ul>
+					        </div>
 				        </div>
 
 				        <div class="col-md-3">
 				        	<h3 class="resource-header">Maps &amp; Images</h3>
-					        <ul class="resource-list light-blue-bg">
-					        	<% loop $Resources %>
-				        		<% if $Type == 'Map' %>
-								<li>
-									<a href="{$BaseHref}resources/{$File.Name}">$Name</a>
-								</li>
-								<% end_if %>
-								<% end_loop %>
-					        </ul>
+				        	<div class="resource-list-box">
+				        		<ul class="resource-list light-blue-bg">
+						        	<% loop $Resources %>
+					        		<% if $Type == 'Map' %>
+									<li>
+										<a href="{$BaseHref}resources/{$File.Name}">$Name</a>
+									</li>
+									<% end_if %>
+									<% end_loop %>
+						        </ul>
+				        	</div>
 							<!-- see the modal done below. -->
 				        </div>
 			        </div>

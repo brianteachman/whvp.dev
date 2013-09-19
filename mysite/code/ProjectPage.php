@@ -69,4 +69,8 @@ class ProjectPage extends ContentPage {
 }
 
 class ProjectPage_Controller extends ContentPage_Controller {
+    public function init() {
+        parent::init();
+        Requirements::themedCSS('projects');
+    }
 }

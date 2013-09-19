@@ -37,7 +37,7 @@ class Resource extends DataObject
             'Choose an File',   // Field title
             'File'              // object-type to list in the tree
         );
-        $resources->setTreeBaseID(37);
+        // $resources->setTreeBaseID(37);
         $fields->addFieldToTab('Root.Main', $resources, 'File');
 
         $type = new DropdownField(
@@ -56,7 +56,7 @@ class Resource extends DataObject
             'Associated Project',  // Field title
             'ProjectHolder'        // object-type to list in the tree
         );
-        $projects->setTreeBaseID(8);
+        $projects->setTreeBaseID(9);
         $fields->addFieldToTab('Root.Main', $projects);
 
         return $fields;
