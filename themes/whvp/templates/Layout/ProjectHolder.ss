@@ -2,7 +2,7 @@
 
 		<div class="row">
 
-			<div class="col-md-8 content">
+			<div class="col-md-6 content">
 
 				<div class="split-content-page">
 
@@ -31,7 +31,7 @@
 
 			</div>
 
-			<div class="col-md-4 light-blue-bg">
+			<div class="col-md-6 light-blue-bg">
 				<img src="http://placehold.it/350x350" alt="">
 				Need an image here
 			</div>

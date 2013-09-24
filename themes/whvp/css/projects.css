@@ -7,6 +7,10 @@
     padding: 0;
     font-size: 14px;
     }
+.copy {
+    margin: 2em 0 2em 1em;
+    padding: 0.5em 1em;
+    }
 .resource-header {
     text-align: center;
     border-bottom: 1px solid rgb(241, 220, 165);

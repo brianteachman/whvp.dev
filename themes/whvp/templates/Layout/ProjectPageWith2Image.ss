@@ -9,7 +9,7 @@
 
 			        <div class="row-fluid">
 			        	<div class="span8">
-			        		<div class="content lead">$Content</div>
+			        		<div class="content">$Content</div>
 			        	</div>
 				        <div class="span4">
 				        	<h4>Articles and Presentations</h4>

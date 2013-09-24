@@ -36,7 +36,7 @@
 </head>
 <body class="$URLSegment typography faded-beige-bg" id="$ClassName">
 
-	<div class="container" role="main">
+	<div class="main container" role="main">
         
         $Layout
 		

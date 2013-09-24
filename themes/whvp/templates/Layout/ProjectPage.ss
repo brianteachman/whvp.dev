@@ -20,7 +20,9 @@
 
 			        	<div class="col-md-5">
 			        		<% if $Content %>
-			        		<div class="pad10px beige-bg">$Content</div>
+			        		<div class="beige-bg copy">
+			        			$Content
+			        		</div>
 			        		<% end_if %>
 			        	</div>
 
