@@ -12,4 +12,8 @@ class ProjectHolder extends SplitContentPage {
 }
 
 class ProjectHolder_Controller extends SplitContentPage_Controller {
+    public function init() {
+        parent::init();
+        Requirements::themedCSS('projects');
+    }
 }

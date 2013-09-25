@@ -7,8 +7,8 @@
 				<div class="split-content-page">
 
 					<section>
-						<h2>$SubHeader1</h2>
-						<article>
+						<h3>$SubHeader1</h3>
+						<article class="projects-list">
 							<% loop $Children %>
 					        <p>
 					            <a href="$Link" title="Read more on &quot;{$Title}&quot;">$Title</a>
@@ -19,7 +19,7 @@
 					</section>
 
 					<section>
-						<h2>$SubHeader2</h2>
+						<h3>$SubHeader2</h3>
 						<article>
 							$Content2
 						</article>

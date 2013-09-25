@@ -3,61 +3,54 @@
 	    <article class="project-page">
 
 	    	<div class="row dark-grey-bg pad-1">
+	    		<div class="col-md-12 content">
 
-	    		<div class="col-md-12">
+	        		<div class="beige-bg copy">
 
-	    			<!-- <div class="row-fluid">
-		        		<div class="span12">
+	        			<div class="top-right dark-grey-bg">
 
-		        			<div class="">
-		        				
-		        			</div>
-		        			
-		        		</div>
-		        	</div> -->
+							<div class="col-md-6">
 
-			        <div class="row content">
+					        	<h3 class="resource-header">Articles &amp; Presentations</h3>
+						        <div class="resource-list-box light-blue-bg">
+						        	<ul class="resource-list">
+						        		<% loop $Resources %>
+						        		<% if $Type != 'Map' %>
+										<li>
+											<a href="{$BaseHref}resources/{$File.Name}">$Name</a>
+										</li>
+										<% end_if %>
+										<% end_loop %>
+						            </ul>
+						        </div>
 
-			        	<div class="col-md-5">
-			        		<% if $Content %>
-			        		<div class="beige-bg copy">
-			        			$Content
-			        		</div>
-			        		<% end_if %>
-			        	</div>
-
-				        <div class="col-md-4">
-				        	<h3 class="resource-header">Articles &amp; Presentations</h3>
-					        <div class="resource-list-box light-blue-bg">
-					        	<ul class="resource-list">
-					        		<% loop $Resources %>
-					        		<% if $Type != 'Map' %>
-									<li>
-										<a href="{$BaseHref}resources/{$File.Name}">$Name</a>
-									</li>
-									<% end_if %>
-									<% end_loop %>
-					            </ul>
 					        </div>
-				        </div>
+					        <div class="col-md-6">
 
-				        <div class="col-md-3">
-				        	<h3 class="resource-header">Maps &amp; Images</h3>
-				        	<div class="resource-list-box light-blue-bg">
-				        		<ul class="resource-list">
-						        	<% loop $Resources %>
-					        		<% if $Type == 'Map' %>
-									<li>
-										<a href="{$BaseHref}resources/{$File.Name}">$Name</a>
-									</li>
-									<% end_if %>
-									<% end_loop %>
-						        </ul>
-				        	</div>
-							<!-- see the modal done below. -->
-				        </div>
-			        </div>
-		        </div>
+					        	<h3 class="resource-header">Maps &amp; Images</h3>
+					        	<div class="resource-list-box light-blue-bg">
+					        		<ul class="resource-list">
+							        	<% loop $Resources %>
+						        		<% if $Type == 'Map' %>
+										<li>
+											<a href="{$BaseHref}resources/{$File.Name}">$Name</a>
+										</li>
+										<% end_if %>
+										<% end_loop %>
+							        </ul>
+					        	</div>
+								<!-- see the modal done below. -->
+
+					        </div>
+
+	        			</div><!-- .top-right -->
+
+	        			<% if $Content %>
+	        			$Content
+	        			<% end_if %>
+
+	        		</div>
+		        </div><!-- .col-md-12 .content -->
 
 	        </div>
 	        <div class="row beige-bg">
