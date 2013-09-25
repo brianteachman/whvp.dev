@@ -2,7 +2,7 @@
 
 	    <article class="project-page">
 
-	    	<div class="row dark-grey-bg pad-1">
+	    	<div class="row dark-grey-bg">
 	    		<div class="col-md-12 content">
 
 	        		<div class="beige-bg copy">

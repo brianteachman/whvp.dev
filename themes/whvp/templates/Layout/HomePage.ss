@@ -1,6 +1,6 @@
 		<!-- Start: HomePage -->
         <header class="row">
-            <div class="col-md-12 header-banner" role="banner">
+            <div class="header-banner" role="banner">
 
                 <img class="banner-top" 
                      src="{$ThemeDir}/graphics/header.jpg" alt="Image A: Homepage banner">
@@ -9,10 +9,10 @@
                      alt="Image B: Homepage banner">
 
                 <a href="{$BaseHref}site-images#image-a"  
-                   class="badge info-btn pos-top-left" 
+                   class="badge info-btn image-a-pos" 
                    title="See Image A on the Site Image Info page">A</a>
                 <a href="{$BaseHref}site-images#image-b"  
-                   class="badge info-btn pos-bottom-right" 
+                   class="badge info-btn image-b-pos" 
                    title="See Image B on the Site Image Info page">B</a>
 
                 <div class="header-text">

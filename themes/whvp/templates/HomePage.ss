@@ -35,6 +35,14 @@
 </head>
 <body class="$URLSegment typography faded-beige-bg" id="$ClassName">
 
+    <!-- Start: Navbar -->
+    <div class="container"><!-- light-blue-bg -->
+        <div class="row">
+            <% include NavBar_Fixed_Top %>
+        </div>
+    </div>
+    <!-- End: Navbar -->
+
     <div class="container" role="main">
         
         $Layout
@@ -42,12 +50,6 @@
     </div>
 
     <footer role="contentinfo">
-
-        <!-- Start: Navbar -->
-        <div class="row">
-            <% include NavBar_Fixed %>
-        </div>
-        <!-- End: Navbar -->
         
         <!-- Start: Homepage Images -->
         <div class="container">

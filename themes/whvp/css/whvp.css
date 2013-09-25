@@ -119,6 +119,7 @@ header {
 
     .pos-top-left {
         position: absolute;
+        /*top: 0;*/
         top: 5px;
         left: 5px;
         }
