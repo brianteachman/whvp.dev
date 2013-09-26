@@ -32,7 +32,6 @@
     <script src="/{$ThemeDir}/js/respond.min.js"></script>
     <![endif]-->
 
-<link href="/{$ThemeDir}/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 </head>
 <body class="$URLSegment typography faded-beige-bg" id="$ClassName">
 

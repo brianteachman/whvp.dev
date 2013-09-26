@@ -14,22 +14,38 @@
 
 			<% loop SiteImages %>
 			<div class="col-md-6">
-	        	<div class="img-box light-blue-bg">
+	        	<div id="" class="img-box light-blue-bg">
 	        		
 		            <div class="image-header">
 
 						<a href="{$BaseHref}images/{$Image.Name}">
-			            	$Image.SetRatioSize(100,100)
+							$Image
+			            	<!-- $Image.SetRatioSize(100,100) -->
+			            	<!-- $Image.SetWidth(100) -->
+			            	<!-- $Image.croppedImage(100,100) -->
+			            	<!-- $Image.CMSThumbnail() -->
 			            </a>
-						<h2>$Name</h2>
 
 					</div>
 
-					<div class="image-description">
-		                <% if $Description %>
-						$Description.LimitWordCountXML
-						<% end_if %>
+					<div>
+						<div class="col-md-3 text-center">
+							
+							<h2>$Name</h2>
+
+						</div>
+						<div class="col-md-9">
+							
+							<div class="image-description">
+				                <% if $Description %>
+								$Description.LimitWordCountXML
+								<% end_if %>
+							</div>
+
+						</div>
 					</div>
+
+					
 		            
 	        	</div> <!-- end: .img-box -->
 	        </div>

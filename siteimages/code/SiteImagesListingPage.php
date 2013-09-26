@@ -44,7 +44,7 @@ class SiteImagesListingPage_Controller extends Page_Controller
     public function init() {
         parent::init();
         Requirements::css('siteimages/css/siteimages.css');
-        // Requirements::javascript('siteimages/js/siteimages.js');
+        Requirements::javascript('siteimages/js/siteimages.js');
     }
 
     public function getSiteImages() {
